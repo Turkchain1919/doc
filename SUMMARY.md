@@ -49,3 +49,14 @@
 * [Token Transfers & Decoding](tokens/token-transfers-and-decoding.md)
 * [Token Verification](tokens/token-verification.md)
 * [Token Metadata & Supply Analytics](tokens/token-metadata-and-supply-analytics.md)
+
+## SMART CONTRACTS
+
+* [Contract Overview](smart-contracts/contract-overview.md)
+* [Contract Verification](smart-contracts/contract-verification.md)
+* [Read & Write Contract](smart-contracts/read-and-write-contract.md)
+* [Proxy Contracts](smart-contracts/proxy-contracts.md)
+* [ABI & Encoding](smart-contracts/abi-and-encoding.md)
+* [Constructor Arguments](smart-contracts/constructor-arguments.md)
+* [Flattened Source Upload](smart-contracts/flattened-source-upload.md)
+* [Security Best Practices](smart-contracts/security-best-practices.md)

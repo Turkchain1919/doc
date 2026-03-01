@@ -94,4 +94,9 @@
 
 ## NETWORK STATISTICS
 
+* [Overview](network-statistics/overview.md)
+* [Block Time & TPS](network-statistics/block-time-and-tps.md)
+* [Gas Tracker](network-statistics/gas-tracker.md)
+* [Transaction Metrics](network-statistics/transaction-metrics.md)
+* [Supply Metrics](network-statistics/supply-metrics.md)
 * [Historical Data & Charts](network-statistics/historical-data-and-charts.md)

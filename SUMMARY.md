@@ -60,3 +60,25 @@
 * [Constructor Arguments](smart-contracts/constructor-arguments.md)
 * [Flattened Source Upload](smart-contracts/flattened-source-upload.md)
 * [Security Best Practices](smart-contracts/security-best-practices.md)
+
+## API DOCUMENTATION
+
+* [Introduction](api-documentation/introduction.md)
+* [Authentication & API Keys](api-documentation/authentication-and-api-keys.md)
+* [Rate Limits](api-documentation/rate-limits.md)
+* [Accounts API](api-documentation/accounts-api.md)
+* [Transactions API](api-documentation/transactions-api.md)
+* [Tokens API](api-documentation/tokens-api.md)
+* [Blocks API](api-documentation/blocks-api.md)
+* [Logs API](api-documentation/logs-api.md)
+* [Stats API](api-documentation/stats-api.md)
+* [Error Handling](api-documentation/error-handling.md)
+
+## DEVELOPERS
+
+* [Network Configuration](developers/network-configuration.md)
+* [Hardhat Setup](developers/hardhat-setup.md)
+* [Foundry Setup](developers/foundry-setup.md)
+* [Web3 Integration](developers/web3-integration.md)
+* [Gas Strategy](developers/gas-strategy.md)
+* [Deployment Best Practices](developers/deployment-best-practices.md)

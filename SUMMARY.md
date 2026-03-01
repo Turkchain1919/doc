@@ -100,3 +100,16 @@
 * [Transaction Metrics](network-statistics/transaction-metrics.md)
 * [Supply Metrics](network-statistics/supply-metrics.md)
 * [Historical Data & Charts](network-statistics/historical-data-and-charts.md)
+
+## FAQ
+
+* [Common RPC errors](faq/common-rpc-errors.md)
+* [Failed transaction reasons](faq/failed-transaction-reasons.md)
+* [Gas issues](faq/gas-issues.md)
+* [Contract verification errors](faq/contract-verification-errors.md)
+* [Token not showing](faq/token-not-showing.md)
+* [MetaMask issues](faq/metamask-issues.md)
+
+## ECOSYSTEM
+
+* [Ecosystem](ecosystem/ecosystem.md)

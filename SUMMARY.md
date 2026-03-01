@@ -82,3 +82,16 @@
 * [Web3 Integration](developers/web3-integration.md)
 * [Gas Strategy](developers/gas-strategy.md)
 * [Deployment Best Practices](developers/deployment-best-practices.md)
+
+## SECURITY
+
+* [Network Security Model](security/network-security-model.md)
+* [Validator Security](security/validator-security.md)
+* [Smart Contract Risks](security/smart-contract-risks.md)
+* [Scam Detection](security/scam-detection.md)
+* [User Safety Best Practices](security/user-safety-best-practices.md)
+* [Reporting Malicious Tokens](security/reporting-malicious-tokens.md)
+
+## NETWORK STATISTICS
+
+* [Historical Data & Charts](network-statistics/historical-data-and-charts.md)

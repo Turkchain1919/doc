@@ -31,29 +31,11 @@
 * [Input Data & Decoding](transactions/input-data-and-decoding.md)
 * [Failure & Revert Analysis](transactions/failure-and-revert-analysis.md)
 
-## Explorer TURKCHAIN
+## BLOCKS
 
-* [What is Turkchain 1919](explorer-turkchain/quickstart.md)
-* [Using the Explorer](explorer-turkchain/publish-your-docs.md)
-* [Network Info (RPC, Chain ID)](explorer-turkchain/publish-your-docs-1.md)
-* [Smart Contracts](explorer-turkchain/smartcontracts.md)
-* [Getting an API Key](explorer-turkchain/getting-an-api-key.md)
-* [Rate Limits](explorer-turkchain/rate-limits.md)
-* [Messaging on TurkChain](explorer-turkchain/messaging-on-turkchain.md)
-
-## BIRIDGE TURKCHAIN
-
-* [Editor](biridge-turkchain/editor.md)
-
-## SWAP TURKCHAIN
-
-* [Editor](swap-turkchain/editor.md)
-
-## NODE TURKCHAIN
-
-* [Editor](node-turkchain/editor.md)
-
-## GAS NATIFE TURK
-
-* [Nasıl TURK Token Alırım?](gas-natife-turk/nasil-turk-token-alirim.md)
-* [How to Buy TURK Token](gas-natife-turk/but-turk-token.md)
+* [Block Overview](blocks/block-overview.md)
+* [Block Structure](blocks/block-structure.md)
+* [Validator Information](blocks/validator-information.md)
+* [Gas & Block Limits](blocks/gas-and-block-limits.md)
+* [Block Rewards](blocks/block-rewards.md)
+* [Finality & Consensus](blocks/finality-and-consensus.md)

@@ -17,9 +17,9 @@ Chain parameters:
 {
   "chainId": 1919,
   "chainName": "Turkchain",
-  "rpcUrls": ["https://rpc.turkchain1919.com"],
+  "rpcUrls": ["https://rpc.turkscan.com"],
   "nativeCurrency": {
-    "name": "Turkchain Coin",
+    "name": "TC",
     "symbol": "TURK",
     "decimals": 18
   },

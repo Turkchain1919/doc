@@ -13,14 +13,14 @@ Turkchain is fully compatible with Foundry.
 ```
 // Some code
 [rpc_endpoints]
-turkchain = "https://rpc.turkchain1919.com"
+turkchain = "https://rpc.turkscan.com"
 ```
 
 ### Deploy with Forge
 
 ```
 forge create src/Contract.sol:Contract \
-  --rpc-url https://rpc.turkchain1919.com \
+  --rpc-url https://rpc.turkscan.com \
   --private-key YOUR_PRIVATE_KEY
 ```
 

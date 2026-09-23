@@ -30,7 +30,7 @@ Error: Invalid chain ID
 ### Recommended Solution
 
 ```
-1. Verify RPC URL: https://rpc.turkchain1919.com  
+1. Verify RPC URL: https://rpc.turkscan.com  
 2. Confirm Chain ID: 1919  
 3. Retry request  
 4. Check internet connection  

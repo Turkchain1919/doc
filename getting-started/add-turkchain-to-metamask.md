@@ -11,12 +11,12 @@ To manually add Turkchain to MetaMask:
 3. Choose "Add a network manually"
 4. Enter the following details
 
-|                    |                                                                |
-| ------------------ | -------------------------------------------------------------- |
-| RPC URL            | [https://rpc.turkchain1919.com](https://rpc.turkchain1919.com) |
-| Chain ID           | 1919                                                           |
-| Currency Symbol    | TURK                                                           |
-| Block Explorer URL | [https://turkscan.com](https://turkscan.com)                   |
+|                    |                                                           |
+| ------------------ | --------------------------------------------------------- |
+| RPC URL            | [https://rpc.](https://rpc.turkchain1919.com)turkscan.com |
+| Chain ID           | 1919                                                      |
+| Currency Symbol    | TURK                                                      |
+| Block Explorer URL | [https://turkscan.com](https://turkscan.com)              |
 
 ```
 After saving, MetaMask will switch to Turkchain automatically.

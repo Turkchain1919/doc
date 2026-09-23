@@ -29,7 +29,7 @@ Official Turkchain blockchain explorer powered by Zinzir Explorer Core.
 ### RPC Endpoint
 
 ```
-https://rpc.turkchain1919.com
+https://rpc.turkscan.com
 ```
 
 Public JSON-RPC endpoint for interacting with Turkchain.\
@@ -41,7 +41,7 @@ Decimals: 18
 
 ### JSON-RPC Access
 
-[https://rpc.turkchain1919.com](https://rpc.turkchain1919.com)
+[https://rpc.](https://rpc.turkchain1919.com)turkscan[.com](https://rpc.turkchain1919.com)
 
 Compatible with:
 
@@ -85,8 +85,22 @@ Official repositories including node software, tools, and developer utilities.
 
 Twitter: [https://x.com/Turkchain1919](https://x.com/Turkchain1919)\
 Telegram: [https://t.me/Turkchain1919](https://t.me/Turkchain1919)\
-Discord: [https://discord.com/invite/zcr37g2H](https://discord.com/invite/zcr37g2H)\
-LinkedIn: [https://www.linkedin.com/](https://www.linkedin.com/)TURKCHAIN
+Discord: [https://discord.gg/p8srM9gV3P](https://discord.gg/p8srM9gV3P)
+
+Twitch: [https://www.twitch.tv/turkchain1919](https://www.twitch.tv/turkchain1919)\
+Kick: [https://kick.com/turkchain1919/](https://kick.com/turkchain1919/)\
+Tiktok: [https://www.tiktok.com/@turkchain1919](https://www.tiktok.com/@turkchain1919)\
+Youtube: [https://www.youtube.com/@Turkchain1919](https://www.youtube.com/@Turkchain1919)
+
+Instagram: [https://www.instagram.com/turkchain1919](https://www.instagram.com/turkchain1919)
+
+
+
+
+
+
+
+
 
 ## 🎨 Brand Assets
 
@@ -112,4 +126,4 @@ Chain ID: 1919\
 Native Token: TURK\
 Decimals: 18\
 Explorer: https://turkscan.com\
-RPC: https://rpc.turkchain1919.com
+RPC: https://rpc.turkscan.com

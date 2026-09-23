@@ -25,7 +25,7 @@ module.exports = {
   solidity: "0.8.20",
   networks: {
     turkchain: {
-      url: "https://rpc.turkchain1919.com",
+      url: "https://rpc.turkscan.com",
       chainId: 1919,
       accounts: ["PRIVATE_KEY"]
     }

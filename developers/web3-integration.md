@@ -15,7 +15,7 @@ Turkchain supports standard Web3 libraries.
 import { ethers } from "ethers";
 
 const provider = new ethers.JsonRpcProvider(
-  "https://rpc.turkchain1919.com"
+  "https://rpc.turkscan.com"
 );
 
 const blockNumber = await provider.getBlockNumber();
@@ -41,7 +41,7 @@ await tx.wait();
 ```
 // Some code
 const Web3 = require("web3");
-const web3 = new Web3("https://rpc.turkchain1919.com");
+const web3 = new Web3("https://rpc.turkscan.com");
 
 const block = await web3.eth.getBlockNumber();
 console.log(block);

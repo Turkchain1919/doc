@@ -41,7 +41,9 @@ Decimals: 18
 
 ### JSON-RPC Access
 
-[https://rpc.](https://rpc.turkchain1919.com)turkscan[.com](https://rpc.turkchain1919.com)
+```
+https://rpc.turkscan.com
+```
 
 Compatible with:
 

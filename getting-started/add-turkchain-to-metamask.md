@@ -31,7 +31,7 @@ Turkchain supports Ethereum-compatible JSON-RPC methods.
 ### Curl Example
 
 ```
-  curl https://rpc.turkchain1919.com \
+  curl https://rpc.turkscan.com \
   -X POST \
   -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'

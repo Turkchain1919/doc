@@ -3,7 +3,7 @@
 Turkchain is accessible through its public RPC endpoint.
 
 RPC URL:\
-https://rpc.turkchain1919.com
+https://rpc.turkscan.com
 
 Chain ID:\
 1919

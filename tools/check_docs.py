@@ -23,11 +23,17 @@ for file in pages:
   links+=1;p=(file.parent/unquote(u.path)).resolve()
   if not p.is_relative_to(ROOT):errors.append(f'{file.relative_to(ROOT)}: link leaves repository: {target}')
   elif not p.exists():errors.append(f'{file.relative_to(ROOT)}: missing local target: {target}')
-nav=(ROOT/'SUMMARY.md').read_text();navpaths=re.findall(r'\]\(([^)#]+)',nav)
-if len(navpaths)!=len(set(navpaths)):errors.append('Duplicate navigation path')
-for file in pages:
- rel=str(file.relative_to(ROOT))
- if rel!='SUMMARY.md' and rel not in navpaths:errors.append('Page missing from navigation: '+rel)
+roots=[ROOT]+[p.parent for p in ROOT.rglob('.gitbook.yaml') if p.parent!=ROOT]
+navpaths=[]
+for root in roots:
+ nav=(root/'SUMMARY.md').read_text();items=re.findall(r'\]\(([^)#]+)',nav)
+ if len(items)!=len(set(items)):errors.append('Duplicate navigation path in '+str(root))
+ navpaths+=items
+ for file in pages:
+  owner=max((r for r in roots if file.is_relative_to(r)),key=lambda r:len(r.parts))
+  if owner!=root:continue
+  rel=str(file.relative_to(root))
+  if rel!='SUMMARY.md' and rel not in items:errors.append('Page missing from navigation: '+str(file.relative_to(ROOT)))
 for name in ['reference/openapi.json','reference/endpoint-evidence.json']:
  try:json.loads((ROOT/name).read_text())
  except ValueError as e:errors.append(f'{name}: {e}')

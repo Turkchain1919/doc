@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://doc.turkscan.com/api-reference/accounts",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/accounts.md).\n\n# Accounts\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/authentication",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/authentication.md).\n\n# Authentication\n\n<mark style=\"color:green;\">`GET`</mark>`/SEARCH`\n\n**Search**\n\n```bash\ncurl -X 'GET' \\\n  'https://turkscan.com/api/v2/search?q=TURK' \\\n  -H 'accept: application/json'\n```\n\n**Token**\n\n```bash\ncurl -X 'GET' \\\n  'https://turkscan.com/api/v2/transactions?filter=pending%20%7C%20validated&type=token_transfer%2Ccontract_creation%2Ccontract_call%2Ccoin_transfer%2Ctoken_creation&method=approve%2Ctransfer%2Cmulticall%2Cmint%2Ccommit' \\\n  -H 'accept: application/json'\n```\n\n**Blocks**\n\n```bash\ncurl -X 'GET' \\\n  'https://turkscan.com/api/v2/blocks?type=block%20%7C%20uncle%20%7C%20reorg' \\\n  -H 'accept: application/json'\n```\n\nStats\n\n```bash\ncurl -X 'GET' \\\n  'https://turkscan.com/api/v2/stats' \\\n  -H 'accept: application/json'\n```\n\nAdress\n\n```bash\ncurl -X 'GET' \\\n  'https://turkscan.com/api/v2/addresses' \\\n  -H 'accept: application/json'\n```\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/blocks",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/blocks.md).\n\n# Blocks\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/error-handling",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/error-handling.md).\n\n# Error Handling\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/introduction",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/introduction.md).\n\n# Introduction\n\n\\# TurkScan API\n\nThe TurkScan API provides programmatic access to Turkchain blockchain data.\n\nThe API follows an Etherscan-compatible query structure.\n\nBase URL:\n\n<https://api.turkscan.com/api>\n\n### \ud83d\udd39 Request Format\n\nTurkScan API uses HTTP GET requests with query parameters.\n\nBase URL:\n\n<https://api.turkscan.com/api>\n\n### \ud83d\udd39 General Structure\n\n```\n// Some code\nhttps://api.turkscan.com/api\n   ?module=MODULE_NAME\n   &action=ACTION_NAME\n   &parameter1=value\n   &parameter2=value\n   &apikey=YourApiKey\n```\n\n|                                                                                          |                                                                                          |                                                 |\n| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------- |\n| \\| module \\| Defines the API module (account, transaction, token, block, logs, stats) \\| | \\| module \\| Defines the API module (account, transaction, token, block, logs, stats) \\| | \\| apikey \\| Your API key \\|                    |\n| \\| address \\| Wallet address (if required) \\|                                            | \\| contractaddress \\| Token contract address (if required) \\|                            | \\| tag \\| Block tag (latest or block number) \\| |\n\n```\n// Some code\nhttps://api.turkscan.com/api\n   ?module=account\n   &action=balance\n   &address=0x742d35Cc6634C0532925a3b844Bc454e4438f44e\n   &tag=latest\n   &apikey=YourApiKey\n```\n\n```\nThis request returns the TURK balance of the specified address.\n```\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/logs",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/logs.md).\n\n# Logs\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/rate-limits",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/rate-limits.md).\n\n# Rate Limits\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/stats",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/stats.md).\n\n# Stats\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/tokens",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/tokens.md).\n\n# Tokens\n",
+    "ok": true
+  },
+  {
+    "url": "https://doc.turkscan.com/api-reference/transactions",
+    "markdown": "> For the complete documentation index, see [llms.txt](https://doc.turkscan.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to page URLs; this page is available as [Markdown](https://doc.turkscan.com/api-reference/transactions.md).\n\n# Transactions\n",
+    "ok": true
+  }
+]

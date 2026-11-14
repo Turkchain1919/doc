@@ -1,28 +1,3 @@
----
-description: '# Token Visibility Issues'
----
+# Token Visibility
 
-# Token not showing
-
-```
-If a token does not appear in your wallet or on TurkScan, check the following.
-```
-
-### Common Reasons
-
-```
-• Token not added to wallet manually  
-• Wrong contract address  
-• Token contract not verified  
-• No transfer activity yet  
-• RPC not synced  
-```
-
-### Solution
-
-```
-1. Copy correct token contract address  
-2. Add token manually in MetaMask  
-3. Confirm correct network selected  
-4. Verify token contract on TurkScan  
-```
+Confirm network and exact contract address. For fungible tokens, check decimals and `balanceOf`; for NFTs, check contract and token ID. Wallet import changes display only. Indexing delays and missing metadata can affect explorer visibility. Never interact with unsolicited tokens to make them disappear.

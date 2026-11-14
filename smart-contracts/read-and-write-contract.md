@@ -1,36 +1,7 @@
----
-description: '# Read & Write Contract'
----
+# Read Contract and Write Contract
 
-# Read & Write Contract
+Read Contract uses the available ABI to encode view or pure calls. Enter parameters in the correct units; address and integer types must match the method signature. A read can revert, and its output depends on the state queried.
 
-```
-Verified contracts expose their ABI, enabling direct interaction through TurkScan.
-```
+Write Contract prepares a transaction for a connected wallet. Confirm network `1919`, target contract, method, arguments, payable TURK value and gas before approving. A wallet rejection is not a mined failure.
 
-### Read Contract
-
-```
-## Read Contract
-```
-
-Read functions are view or pure functions that do not modify state.
-
-These calls are executed locally and require no gas.
-
-### Write Contract
-
-```
-## Write Contract
-```
-
-```
-Write functions modify blockchain state and require a connected wallet and gas fee.
-```
-
-### Interaction Flow
-
-```
-Wallet → ABI Encoding → RPC → Validator Execution → State Update
-```
-
+For proxies, use the implementation ABI only after confirming the proxy's current implementation and upgrade pattern. A source-verified contract can still contain privileged or harmful behavior.

@@ -1,36 +1,7 @@
----
-description: '# Contract Overview'
----
+# Smart Contract Overview
 
-# Contract Overview
+Smart contracts execute EVM bytecode on Turkchain® Mainnet. Deployments and writes require signed transactions and TURK for gas. Read-only calls can query or simulate state without persisting it.
 
-```
-Smart contracts on Turkchain are deployed EVM bytecode programs executed deterministically by validators.
-```
+TurkScan® displays indexed contract data, verified source and available ABI-driven interfaces. Source verification and administrator certification are separate. Neither is a complete security audit.
 
-### Contract Page Tabs
-
-```
-## Contract Page Structure
-```
-
-A verified contract page on TurkScan includes:
-
-• Code\
-• Read Contract\
-• Write Contract\
-• Events\
-• Internal Transactions\
-• Analytics
-
-### Contract Types
-
-```
-## Contract Types
-```
-
-• Standard contracts\
-• Token contracts (ERC-20 / ERC-721 / ERC-1155)\
-• Proxy contracts\
-• Multisig contracts\
-• Upgradeable contracts
+Start with [Deployment](../developers/deployment-best-practices.md), [Verification](contract-verification.md), [Read & Write](read-and-write-contract.md) and [Proxy Contracts](proxy-contracts.md).

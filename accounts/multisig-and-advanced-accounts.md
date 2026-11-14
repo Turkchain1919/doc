@@ -1,36 +1,7 @@
----
-description: '# Multisig & Advanced Accounts'
----
-
 # Multisig & Advanced Accounts
 
-```
-Multisignature wallets require multiple approvals before executing a transaction.
-```
+A multisignature wallet is generally a contract that enforces approval rules such as an owner threshold. TurkScan® can inspect its on-chain transactions, code and events as contract data.
 
-### Multisig Features
+No particular multisig service or account-abstraction bundler is certified by this documentation. Use the wallet project's own deployment list and verify code, owners, threshold, modules and upgrade authority on Turkchain Mainnet.
 
-```
-Multisig accounts typically include:
-
-• Owners list  
-• Required confirmations  
-• Pending transactions  
-• Execution history  
-```
-
-### Contract-based Wallets
-
-```
-## Contract-based Wallets
-```
-
-```
-Some wallets operate as smart contracts rather than externally owned accounts (EOA).
-
-These accounts may include:
-
-• Access control logic  
-• Spending limits  
-• Role-based permissions  
-```
+A pending proposal in a multisig UI is not necessarily an on-chain transaction. The execution hash and successful receipt establish inclusion. Never interpret an explorer address label as evidence that a multisig is safe.

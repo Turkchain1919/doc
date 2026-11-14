@@ -1,21 +1,5 @@
----
-description: '# Network Statistics Overview'
----
+# Network Statistics
 
-# Overview
+The statistics endpoint returns indexed counts, gas estimates and available market fields. The audit observed live block, transaction and address totals. Counts change continuously; captured examples are snapshots, not current totals. Null prices, TVL and unavailable metrics must stay unavailable.
 
-The Network Statistics section provides real-time and historical insights into Turkchain’s performance and activity.
-
-These metrics help developers, validators, and users monitor network health.
-
-### Core Metrics Displayed
-
-```
-• Latest block number  
-• Average block time  
-• Transactions per second (TPS)  
-• Gas price metrics  
-• Total transactions  
-• Total accounts  
-• Network supply  
-```
+See [Statistics API](../api-documentation/stats-api.md) for exact requests and captured responses.

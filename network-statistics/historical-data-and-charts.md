@@ -1,37 +1,5 @@
----
-description: '# Historical Data & Charts'
----
+# Historical Data and Charts
 
-# Historical Data & Charts
+The live transaction-history chart endpoint returned dated transaction counts. Market and secondary-coin chart routes can return empty data. Empty or null market series are not zero-priced trading history. API integrations should preserve timestamps and the stated aggregation window.
 
-```
-Historical charts visualize long-term network performance.
-```
-
-### Available Charts
-
-```
-• Block time history  
-• Daily transactions  
-• Gas price trends  
-• Network utilization  
-• Total supply over time  
-• Validator participation 
-```
-
-### Data Calculation
-
-```
-Charts are calculated using indexed blockchain data stored within TurkScan infrastructure.
-```
-
-### Use Cases
-
-```
-Historical analytics are useful for:
-
-• Network monitoring  
-• Performance optimization  
-• Research & reporting  
-• Validator analysis  
-```
+See [Statistics API](../api-documentation/stats-api.md) for exact requests and captured responses.

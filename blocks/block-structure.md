@@ -1,43 +1,7 @@
----
-description: '# Block Structure'
----
+# Block Details, Height and Hash
 
-# Block Structure
+A block groups executed transactions and references its parent. TurkScan® exposes height, hash, parent hash, timestamp, gas limit, gas used and related transactions where indexed.
 
-```
-Each block consists of a header and a body.
-```
+Use block number for sequential queries and block hash for exact identity. JSON-RPC quantities are hexadecimal; REST V2 generally uses JSON numbers or decimal strings according to each field schema.
 
-### Block Header
-
-```
-## Block Header
-```
-
-```
-The block header contains cryptographic and consensus-critical metadata:
-
-• Parent Hash  
-• State Root  
-• Transactions Root  
-• Receipts Root  
-• Timestamp  
-• Block Number  
-• Gas Limit  
-• Gas Used  
-• Validator Signature   
-```
-
-### Block Body
-
-```
-## Block Body
-```
-
-The block body contains:
-
-• List of transactions\
-• Transaction receipts\
-• Event logs
-
-### Architecture Diagram
+Do not infer proof-of-work mining from an EVM field named `miner` or `difficulty`. Chain adapters can retain those field names for compatibility. A field that is null or zero is not evidence of a reward or economic value.

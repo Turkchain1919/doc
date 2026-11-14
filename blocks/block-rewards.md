@@ -1,31 +1,7 @@
----
-description: '# Block Rewards'
----
-
 # Block Rewards
 
-```
-Validators may receive block rewards depending on the network’s economic model.
-```
+TurkScan® may return block reward-related fields as part of its EVM-compatible schema. Their presence does not establish a fixed TURK issuance schedule or a payout to the address shown as the block producer.
 
-### Reward Components
+No reward schedule or reward distribution mechanism was established by the API audit. Do not calculate validator yield from null, zero or generic reward fields. Use chain monetary-policy and consensus evidence before reporting issuance.
 
-```
-## Reward Sources
-```
-
-Block rewards may include:
-
-• Transaction fees\
-• Protocol inflation rewards (if enabled)\
-• MEV-related gains (if applicable)
-
-### Fee Distribution
-
-```
-## Fee Distribution
-```
-
-```
-Transaction fees are distributed to the block proposer and potentially shared across validators depending on protocol rules.
-```
+See [Supply Metrics](../network-statistics/supply-metrics.md) for the same distinction between schema fields and validated monetary totals.

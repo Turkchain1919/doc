@@ -1,31 +1,3 @@
----
-description: '# Contract Verification Errors'
----
+# Contract Verification Problems
 
-# Contract verification errors
-
-```
-Verification errors usually occur due to compilation mismatches.
-```
-
-### Common Causes
-
-```
-• Wrong compiler version  
-• Optimization mismatch  
-• Incorrect constructor arguments  
-• Incorrect EVM version  
-• Flattening errors  
-```
-
-### How to Fix
-
-```
-1. Confirm compiler version used at deployment  
-2. Match optimization settings exactly  
-3. Encode constructor arguments properly  
-4. Ensure correct pragma version  
-```
-
-
-
+Match the exact compiler, optimizer, EVM target, libraries, source paths and constructor arguments used at deployment. Prefer original Standard JSON Input. For proxies, verify implementation and proxy separately. A disabled verification method should not be retried as if it were enabled.

@@ -1,31 +1,5 @@
----
-description: '# Gas Tracker'
----
-
 # Gas Tracker
 
-```
-Gas Tracker displays real-time gas price information.
-```
+The `/api/v2/stats` response includes slow, average and fast gas-price estimates when available. Treat them as observations, not guaranteed inclusion prices. Gas units, gwei and TURK are different quantities; see [Gas Mechanics](../transactions/gas-mechanics.md).
 
-### Gas Metrics
-
-```
-• Safe Gas Price  
-• Proposed Gas Price  
-• Fast Gas Price  
-• Average Gas Used Per Block  
-• Block Gas Limit  
-```
-
-### Fee Estimation
-
-```
-Transaction Fee = Gas Used × Gas Price
-```
-
-### Congestion Indicator
-
-```
-High gas usage relative to block gas limit indicates network congestion.
-```
+See [Statistics API](../api-documentation/stats-api.md) for exact requests and captured responses.

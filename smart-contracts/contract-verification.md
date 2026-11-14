@@ -1,42 +1,9 @@
----
-description: '# Contract Verification'
----
+# Solidity and Contract Verification
 
-# Contract Verification
+Verification compares submitted compiler inputs with deployed bytecode. Preserve the exact Solidity version, optimizer configuration, EVM target, linked libraries, constructor arguments and source files used for deployment.
 
-```
-Contract verification ensures the published source code matches the deployed bytecode on Turkchain.
-```
+Open the contract on TurkScan® and choose Verify & Publish where available. Prefer Standard JSON Input for multi-file projects. The live verification configuration reports the Rust verifier enabled; enabled languages and compiler choices must be taken from that configuration rather than assumed.
 
-### Verification Process
+The audit read verification configuration and verified contract data but did not submit source or deploy a contract. Vyper support must not be inferred from the presence of generic routes. See [Verification API](../api-documentation/contract-verification-api.md), [Foundry](../devs/verification/foundry-verification.md) and [Hardhat](../devs/verification/hardhat-verification-plugin.md).
 
-```
-## Verification Steps
-```
-
-1. Submit Solidity source code
-2. Select compiler version
-3. Set optimization settings
-4. Provide constructor arguments
-5. Submit for compilation
-6. Bytecode comparison is performed
-
-### Matching Logic
-
-```
-## Bytecode Matching
-```
-
-TurkScan recompiles the submitted source code.
-
-If the resulting bytecode matches the deployed on-chain bytecode, the contract is marked as Verified.
-
-### Required Parameters
-
-```
-• Compiler version  
-• Optimization enabled / disabled  
-• Optimization runs  
-• EVM version (if specified)  
-• Constructor arguments  
-```
+Verified source establishes a source/bytecode match, not ownership, safety or freedom from upgrade risk.

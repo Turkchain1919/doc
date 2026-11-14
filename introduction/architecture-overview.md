@@ -1,36 +1,9 @@
 # Architecture Overview
 
-Turkchain is built on a modular blockchain architecture composed of:
+A wallet signs a transaction locally and submits it to a Turkchain® RPC node. The network executes and includes it in a block. TurkScan® indexes blocks, receipts, logs and available execution traces, then exposes the indexed data through its website and APIs.
 
-1. Consensus Layer
-2. Execution Layer (EVM Engine)
-3. State & Storage Layer
+TurkScan® uses Blockscout-based explorer infrastructure, with TurkScan branding and operator-managed features. The inspected backend reports version `12.0.1`; statistics and source verification use separate services. The explorer is a view of the network, not the network's consensus engine.
 
-### Consensus Layer
+An RPC receipt may appear before the explorer finishes indexing it. A token list, badge or price is explorer metadata and does not change on-chain ownership. A source match proves a relationship between submitted source and deployed bytecode, not contract safety.
 
-Validator-based Byzantine Fault Tolerant consensus ensures:
-
-• Fast block finality\
-• Deterministic execution\
-• High throughput\
-• Network security
-
-```
-## Execution Layer (EVM Engine)
-```
-
-```
-Turkchain natively integrates the Ethereum Virtual Machine, enabling:
-
-• Solidity smart contract deployment  
-• Ethereum-compatible bytecode execution  
-• Web3 tooling support  
-• Hardhat & Foundry integration  
-• MetaMask compatibility
-```
-
-```
- State & Storage Layer
-```
-
-<figure><img src="../.gitbook/assets/a98d6142-1a0e-4a1b-a26d-fc31dcff1df7.png" alt=""><figcaption></figcaption></figure>
+GitHub is the documentation source and the existing GitBook site is the publication platform. No documentation container or separate documentation server is required.

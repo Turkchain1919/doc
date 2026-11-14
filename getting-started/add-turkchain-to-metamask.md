@@ -1,75 +1,20 @@
-# Add Turkchain to MetaMask
+# Add Turkchain® to MetaMask
 
-```
-# Add Turkchain to MetaMask
-```
+In MetaMask, open the network selector and choose the option to add a custom network. Enter:
 
-To manually add Turkchain to MetaMask:
+| Setting | Value |
+| --- | --- |
+| Network | Turkchain® Mainnet |
+| Chain ID (decimal) | `1919` |
+| EVM chain ID (hex) | `0x77f` |
+| Native currency | TURK |
+| Decimals | `18` |
+| HTTPS JSON-RPC | `https://rpc.turkscan.com` |
+| WebSocket | `wss://evm-ws.turkscan.com` |
+| Explorer | `https://turkscan.com` |
 
-1. Open MetaMask
-2. Click "Add Network"
-3. Choose "Add a network manually"
-4. Enter the following details
+`eth_chainId` returned `0x77f` during the 14 November 2026 audit. Wallet network names are display labels; the chain ID determines the execution network.
 
-|                    |                                              |
-| ------------------ | -------------------------------------------- |
-| RPC URL            | https://rpc.turkscan.com                     |
-| Chain ID           | 1919                                         |
-| Currency Symbol    | TURK                                         |
-| Block Explorer URL | [https://turkscan.com](https://turkscan.com) |
+Save and switch to Turkchain Mainnet. Confirm the wallet shows TURK. If the network already exists, inspect its RPC and chain ID rather than creating a conflicting entry. Adding a network never requires a seed phrase or private key.
 
-```
-After saving, MetaMask will switch to Turkchain automatically.
-```
-
-## Using RPC
-
-```
-Turkchain supports Ethereum-compatible JSON-RPC methods.
-```
-
-### Curl Example
-
-```
-  curl https://rpc.turkscan.com \
-  -X POST \
-  -H "Content-Type: application/json" \
-  --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
-```
-
-```
-This request returns the current network gas price.
-```
-
-### Supported RPC Methods
-
-Commonly used methods:
-
-* eth\_blockNumber
-* eth\_getBalance
-* eth\_getTransactionByHash
-* eth\_sendRawTransaction
-* eth\_call
-* eth\_getLogs
-
-## First Transaction
-
-To send a transaction on Turkchain:
-
-1. Connect MetaMask to Turkchain
-2. Ensure you have TURK balance
-3. Enter recipient address
-4. Set amount
-5. Confirm transaction
-
-### Transaction Lifecycle
-
-Transaction flow:
-
-User Wallet → RPC Node → Validator Set → Block Inclusion → Finality
-
-### Explorer Tracking
-
-After sending a transaction, copy the transaction hash and search it on:
-
-https://turkscan.com
+For a DApp, use `wallet_addEthereumChain` with `chainId: '0x77f'` and then `wallet_switchEthereumChain`. Handle user rejection and unsupported wallet methods. See [MetaMask Integration](../developers/metamask-integration.md).

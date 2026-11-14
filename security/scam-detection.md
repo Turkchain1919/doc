@@ -1,23 +1,3 @@
----
-description: '# Scam Detection'
----
-
 # Scam Detection
 
-```
-TurkScan provides transparency tools to help users detect suspicious tokens and contracts.
-```
-
-• Unverified contracts\
-• Recently deployed tokens with large supply\
-• Fake token symbols\
-• Suspicious transfer activity
-
-### Rug Pull Signals
-
-```
-• Liquidity removal  
-• Mint function abuse  
-• Ownership not renounced  
-• Hidden fee mechanisms  
-```
+Names, tickers, logos and public tags can be misleading. Confirm the exact contract address independently. Do not visit claim sites or approve spenders linked by unsolicited tokens. A token can appear in your wallet without your consent.

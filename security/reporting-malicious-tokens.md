@@ -1,25 +1,3 @@
----
-description: '# Reporting Malicious Tokens'
----
-
 # Reporting Malicious Tokens
 
-```
-If you encounter a malicious or fraudulent token, report it to the TurkScan team.
-```
-
-### Report Should Include
-
-```
-• Contract address  
-• Description of issue  
-• Transaction examples  
-• Supporting evidence  
-```
-
-### Transparency Commitment
-
-```
-TurkScan may flag suspicious tokens to protect users and improve ecosystem trust.
-```
-
+Collect the exact chain, contract address, transaction hashes and a factual description of the issue. Use an operator-provided support channel from the current TurkScan site. Do not send private keys or pay a purported recovery agent. No dedicated abuse API or guaranteed response time was verified.

@@ -1,43 +1,5 @@
----
-description: '# Block Time & TPS'
----
+# Block Time and TPS
 
-# Block Time & TPS
+Average block time is measured from indexed blocks and can change with the sampling window. Calculate transactions per second only from a defined interval and canonical data. Do not substitute a registry estimate or configured block gas limit for measured throughput.
 
-```
-Block time represents the average duration between two consecutive blocks.
-```
-
-### Block Time
-
-```
-## Average Block Time
-```
-
-Block time is calculated using a moving average of recent blocks.
-
-Lower block time improves:
-
-• Transaction confirmation speed\
-• User experience\
-• Network responsiveness
-
-### Transactions Per Second (TPS)
-
-```
-## Transactions Per Second (TPS)
-```
-
-TPS measures the number of confirmed transactions per second.
-
-TPS = Total Transactions in Period / Time Duration
-
-### Throughput Analysis
-
-```
-Higher TPS indicates:
-
-• Better scalability  
-• Higher validator efficiency  
-• Stronger network performance  
-```
+See [Statistics API](../api-documentation/stats-api.md) for exact requests and captured responses.

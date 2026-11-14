@@ -1,25 +1,7 @@
----
-description: '# First Transaction'
----
-
 # First Transaction
 
-To send a transaction on Turkchain:
+Obtain TURK from a source you trust and verify the receiving address. Select Turkchain Mainnet (`1919`) in the wallet. Start with a small transfer to an address you control.
 
-1. Connect MetaMask to Turkchain
-2. Ensure you have TURK balance
-3. Enter recipient address
-4. Set amount
-5. Confirm transaction
+Enter the recipient and amount, review gas and total cost, and confirm once. Save the hash returned by the wallet. Search it on TurkScan® and wait for a successful receipt. A pending transaction is not yet proof of payment.
 
-### Transaction Lifecycle
-
-Transaction flow:
-
-User Wallet → RPC Node → Validator Set → Block Inclusion → Finality
-
-### Explorer Tracking
-
-After sending a transaction, copy the transaction hash and search it on:
-
-https://turkscan.com
+If the explorer cannot find it, query `eth_getTransactionReceipt` on the RPC and check the selected network. Do not resend automatically: this can create a second payment. A failed transaction can still consume gas; see [Failure Analysis](../transactions/failure-and-revert-analysis.md).

@@ -1,24 +1,7 @@
----
-description: '# Constructor Arguments'
----
-
 # Constructor Arguments
 
-```
-Constructor arguments are appended to contract bytecode during deployment.
-```
+Constructor arguments initialize a deployment and are appended to creation bytecode using ABI encoding. They are not ordinary post-deployment function calls.
 
-### Encoding Format
+Retain the deployment transaction, build artifact and original values. Verification must use the original constructor arguments and correct linked-library addresses. Encoding a decimal amount with the wrong units can produce a different initialization.
 
-```
-Arguments must be ABI-encoded and submitted in hex format without 0x prefix (if required).
-```
-
-### Example
-
-```
-0000000000000000000000005abfec25f74cd88437631a7731906932776356f9
-```
-
-Represents an address passed to constructor.
-
+For proxy deployments, distinguish implementation constructor arguments from proxy constructor and initialization calldata. Never publish a secret as a constructor argument: deployment data is public.

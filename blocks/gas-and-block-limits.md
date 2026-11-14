@@ -1,43 +1,7 @@
----
-description: '# Gas & Block Limits'
----
+# Gas Usage and Block Limits
 
-# Gas & Block Limits
+Block gas used is the sum of execution gas recorded in that block. Block gas limit is a separate cap. The usage percentage is meaningful only relative to the actual limit returned for that block.
 
-```
-Each block has a maximum gas limit defining the total computational capacity of that block.
-```
+Fetch [block details](../api-documentation/blocks-api.md) or `eth_getBlockByNumber` rather than hard-coding a limit. Empty blocks can legitimately have zero gas used.
 
-### Gas Limit
-
-```
-## Block Gas Limit
-```
-
-The gas limit determines:
-
-• Maximum execution capacity\
-• Number of transactions per block\
-• Smart contract complexity per block
-
-### Gas Used
-
-```
-## Gas Used
-```
-
-```
-Gas used represents the total computational effort consumed by all transactions within a block.
-```
-
-### Congestion Effects
-
-```
-## Network Congestion
-```
-
-When blocks approach the gas limit:
-
-• Transactions compete via gas price\
-• Fees may increase\
-• Lower priority transactions may remain pending
+Explorer charts aggregate indexed data over time and can be delayed or unavailable. A high configured gas limit is not a measured throughput benchmark.

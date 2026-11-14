@@ -1,23 +1,7 @@
----
-description: '# Token Transfers & Decoding'
----
+# Token Transfers and Decoding
 
-# Token Transfers & Decoding
+Token-transfer views are derived from recognized contract events. One transaction can emit multiple transfers, and one ERC-1155 batch can describe several token IDs.
 
-Token transfers are identified by parsing smart contract event logs.
+Confirm the emitting contract address, amount or token ID, sender, recipient and parent transaction status. A token with a familiar symbol can be unrelated to an official asset.
 
-### How Detection Works
-
-```
-1. Contract emits Transfer event  
-2. Event signature is matched  
-3. Parameters are decoded  
-4. Transfer is indexed in database  
-```
-
-### ERC-20 Transfer Example
-
-```
-Topics[0] = keccak256("Transfer(address,address,uint256)")
-```
-
+Use integer base units and the actual token decimals for fungible tokens. See [Tokens API](../api-documentation/tokens-api.md) and [Logs](../transactions/event-logs.md).

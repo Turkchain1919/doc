@@ -1,39 +1,7 @@
----
-description: '# Finality & Consensus'
----
-
 # Finality & Consensus
 
-```
-Turkchain uses a deterministic finality mechanism.
-```
+A transaction receipt records inclusion in a block. Explorer confirmations count subsequent indexed blocks; they do not independently prove the network's consensus guarantees.
 
-### Finality
+This documentation does not promise irreversible or instant finality from an EVM receipt alone. Applications should define their acceptance policy from Turkchain® node consensus data and their own risk requirements. Cross-chain systems also have route-specific confirmation and relayer policies.
 
-```
-## Finality
-```
-
-```
-Once a block is confirmed by the validator set, it achieves near-instant finality and cannot be reverted under normal network conditions.
-```
-
-### Reorganizations
-
-```
-## Chain Reorganizations
-```
-
-```
-Due to the deterministic consensus model, deep chain reorganizations are extremely rare.
-```
-
-### Uncle / Ommer Blocks
-
-```
-## Uncle / Ommer Blocks
-```
-
-Turkchain does not utilize uncle or ommer blocks.
-
-Due to the validator-based consensus design, only finalized blocks are accepted into the canonical chain.
+Track canonical block hashes and reconcile changes. See [Bridge Security](../cross-chain/bridge-security.md) before treating source-chain inclusion as completed destination delivery.

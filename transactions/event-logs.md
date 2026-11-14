@@ -1,27 +1,7 @@
----
-description: '# Event Logs'
----
+# Logs and Events
 
-# Event Logs
+Contracts emit logs containing the emitting address, indexed topics and non-indexed data. For a typical non-anonymous Solidity event, topic zero is the hash of its signature. Decode topics and data using the correct ABI.
 
-```
-Event logs are generated when a smart contract emits events during execution.
-```
+A `Transfer` signature can be emitted by an untrusted contract. Confirm the emitting contract address and transaction receipt. Reverted execution does not retain its emitted logs in the successful receipt.
 
-### Log Structure
-
-```
-Each log contains:
-
-• Contract address  
-• Topics (indexed parameters)  
-• Data (non-indexed parameters)  
-• Block number  
-• Transaction hash  
-```
-
-### ERC-20 Transfer Example
-
-```
-event Transfer(address indexed from, address indexed to, uint256 value);
-```
+Query logs by transaction or address using the [Logs API](../api-documentation/logs-api.md). Use transaction hash plus log index to identify an event, and handle reorgs or indexer corrections in integrations.

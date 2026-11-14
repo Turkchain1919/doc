@@ -1,26 +1,7 @@
----
-description: '# Rate Limits'
----
-
 # Rate Limits
 
-Rate limits are applied per API key.
+No public contractual requests-per-second quota was established by the audit. Source-code defaults are not evidence of the active proxy, application or account policy. Do not advertise an upstream Etherscan plan as a TurkScan® allowance.
 
-### Default Limits
+Use small concurrent batches, cache reusable reads and avoid polling every resource unnecessarily. On HTTP 429, honor `Retry-After` when supplied and use bounded exponential backoff with jitter. Limit retries and surface persistent failure.
 
-```
-• 5 requests per second (free tier)
-• Higher tiers available for enterprise users
-```
-
-### Exceeded Limit Response
-
-```
-// Some code
-{
-  "status": "0",
-  "message": "NOTOK",
-  "result": "Max rate limit reached"
-}
-```
-
+A key can affect a configured policy without bypassing every restriction. Never load-test production to discover a threshold. Public read probes were bounded and no quota-exhaustion test was performed.

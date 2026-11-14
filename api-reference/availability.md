@@ -121,3 +121,5 @@ This is a complete inventory of the operations declared by the deployed OpenAPI 
 | GET | `/api/v2/withdrawals/counters` | Not exercised; chain-specific support not established |
 
 See [Contract Verification API](contract-verification.md) and [Complete evidence](reference/endpoint-evidence.json).
+
+A follow-up future-height countdown test succeeded for both API formats. The original current/mined-height error remains recorded. See [Countdown](endpoint/getblockcountdown.md).

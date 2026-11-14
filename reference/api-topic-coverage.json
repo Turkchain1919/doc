@@ -1,0 +1,584 @@
+[
+  {
+    "topic": "balance",
+    "page": "api-documentation/endpoint/balance.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "balancemulti",
+    "page": "api-documentation/endpoint/balancemulti.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "balancehistory",
+    "page": "api-documentation/endpoint/balancehistory.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}/coin-balance-history"
+  },
+  {
+    "topic": "txlist",
+    "page": "api-documentation/endpoint/txlist.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "advanced-filter-txlist",
+    "page": "api-documentation/endpoint/advanced-filter-txlist.md",
+    "status": "Verified V2 filtering resource; action parity not asserted",
+    "counterpart": null
+  },
+  {
+    "topic": "tokentx",
+    "page": "api-documentation/endpoint/tokentx.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "advanced-filter-tokentx",
+    "page": "api-documentation/endpoint/advanced-filter-tokentx.md",
+    "status": "Verified V2 filtering resource; action parity not asserted",
+    "counterpart": null
+  },
+  {
+    "topic": "tokennfttx",
+    "page": "api-documentation/endpoint/tokennfttx.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "advanced-filter-tokennfttx",
+    "page": "api-documentation/endpoint/advanced-filter-tokennfttx.md",
+    "status": "Verified V2 filtering resource; action parity not asserted",
+    "counterpart": null
+  },
+  {
+    "topic": "token1155tx",
+    "page": "api-documentation/endpoint/token1155tx.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "advanced-filter-token1155tx",
+    "page": "api-documentation/endpoint/advanced-filter-token1155tx.md",
+    "status": "Verified V2 filtering resource; action parity not asserted",
+    "counterpart": null
+  },
+  {
+    "topic": "txlistinternal",
+    "page": "api-documentation/endpoint/txlistinternal.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "advanced-filter-txlistinternal",
+    "page": "api-documentation/endpoint/advanced-filter-txlistinternal.md",
+    "status": "Verified V2 filtering resource; action parity not asserted",
+    "counterpart": null
+  },
+  {
+    "topic": "txlistinternal-blockrange",
+    "page": "api-documentation/endpoint/txlistinternal-blockrange.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/internal-transactions"
+  },
+  {
+    "topic": "txlistinternal-txhash",
+    "page": "api-documentation/endpoint/txlistinternal-txhash.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/transactions/{transaction_hash_param}/internal-transactions"
+  },
+  {
+    "topic": "getminedblocks",
+    "page": "api-documentation/endpoint/getminedblocks.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "txsbeaconwithdrawal",
+    "page": "api-documentation/endpoint/txsbeaconwithdrawal.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "fundedby",
+    "page": "api-documentation/endpoint/fundedby.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}/transactions"
+  },
+  {
+    "topic": "getblockreward",
+    "page": "api-documentation/endpoint/getblockreward.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "getblocktxnscount",
+    "page": "api-documentation/endpoint/getblocktxnscount.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/blocks/{block_hash_or_number_param}"
+  },
+  {
+    "topic": "getblockcountdown",
+    "page": "api-documentation/endpoint/getblockcountdown.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getblocknobytime",
+    "page": "api-documentation/endpoint/getblocknobytime.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "dailyavgblocksize",
+    "page": "api-documentation/endpoint/dailyavgblocksize.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/blocks"
+  },
+  {
+    "topic": "dailyblkcount",
+    "page": "api-documentation/endpoint/dailyblkcount.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/blocks"
+  },
+  {
+    "topic": "dailyblockrewards",
+    "page": "api-documentation/endpoint/dailyblockrewards.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "dailyavgblocktime",
+    "page": "api-documentation/endpoint/dailyavgblocktime.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/stats"
+  },
+  {
+    "topic": "dailyuncleblkcount",
+    "page": "api-documentation/endpoint/dailyuncleblkcount.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getabi",
+    "page": "api-documentation/endpoint/getabi.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "getsourcecode",
+    "page": "api-documentation/endpoint/getsourcecode.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "getcontractcreation",
+    "page": "api-documentation/endpoint/getcontractcreation.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "verifysourcecode",
+    "page": "api-documentation/endpoint/verifysourcecode.md",
+    "status": "Source-confirmed workflow; no state-changing submission",
+    "counterpart": null
+  },
+  {
+    "topic": "verifyzksyncsourcecode",
+    "page": "api-documentation/endpoint/verifyzksyncsourcecode.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "verifyvyper",
+    "page": "api-documentation/endpoint/verifyvyper.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "verifystylus",
+    "page": "api-documentation/endpoint/verifystylus.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "verifyproxycontract",
+    "page": "api-documentation/endpoint/verifyproxycontract.md",
+    "status": "Source-confirmed workflow; no state-changing submission",
+    "counterpart": null
+  },
+  {
+    "topic": "checkverifystatus",
+    "page": "api-documentation/endpoint/checkverifystatus.md",
+    "status": "Source-confirmed workflow; no state-changing submission",
+    "counterpart": null
+  },
+  {
+    "topic": "checkproxyverification",
+    "page": "api-documentation/endpoint/checkproxyverification.md",
+    "status": "Source-confirmed workflow; no state-changing submission",
+    "counterpart": null
+  },
+  {
+    "topic": "gasestimate",
+    "page": "api-documentation/endpoint/gasestimate.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/stats"
+  },
+  {
+    "topic": "gasoracle",
+    "page": "api-documentation/endpoint/gasoracle.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "dailyavggaslimit",
+    "page": "api-documentation/endpoint/dailyavggaslimit.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/blocks"
+  },
+  {
+    "topic": "dailygasused",
+    "page": "api-documentation/endpoint/dailygasused.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/blocks"
+  },
+  {
+    "topic": "dailyavggasprice",
+    "page": "api-documentation/endpoint/dailyavggasprice.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/transactions"
+  },
+  {
+    "topic": "ethblocknumber",
+    "page": "api-documentation/endpoint/ethblocknumber.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_blockNumber"
+  },
+  {
+    "topic": "ethgetblockbynumber",
+    "page": "api-documentation/endpoint/ethgetblockbynumber.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getBlockByNumber"
+  },
+  {
+    "topic": "ethgetunclebyblocknumberandindex",
+    "page": "api-documentation/endpoint/ethgetunclebyblocknumberandindex.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "ethgetblocktransactioncountbynumber",
+    "page": "api-documentation/endpoint/ethgetblocktransactioncountbynumber.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getBlockTransactionCountByNumber"
+  },
+  {
+    "topic": "ethgettransactionbyhash",
+    "page": "api-documentation/endpoint/ethgettransactionbyhash.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getTransactionByHash"
+  },
+  {
+    "topic": "ethgettransactionbyblocknumberandindex",
+    "page": "api-documentation/endpoint/ethgettransactionbyblocknumberandindex.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getTransactionByBlockNumberAndIndex"
+  },
+  {
+    "topic": "ethgettransactioncount",
+    "page": "api-documentation/endpoint/ethgettransactioncount.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getTransactionCount"
+  },
+  {
+    "topic": "ethsendrawtransaction",
+    "page": "api-documentation/endpoint/ethsendrawtransaction.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "ethgettransactionreceipt",
+    "page": "api-documentation/endpoint/ethgettransactionreceipt.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getTransactionReceipt"
+  },
+  {
+    "topic": "ethcall",
+    "page": "api-documentation/endpoint/ethcall.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_call"
+  },
+  {
+    "topic": "ethgetcode",
+    "page": "api-documentation/endpoint/ethgetcode.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getCode"
+  },
+  {
+    "topic": "ethgetstorageat",
+    "page": "api-documentation/endpoint/ethgetstorageat.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_getStorageAt"
+  },
+  {
+    "topic": "ethgasprice",
+    "page": "api-documentation/endpoint/ethgasprice.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_gasPrice"
+  },
+  {
+    "topic": "ethestimategas",
+    "page": "api-documentation/endpoint/ethestimategas.md",
+    "status": "Observed network JSON-RPC read",
+    "counterpart": "eth_estimateGas"
+  },
+  {
+    "topic": "getlogs",
+    "page": "api-documentation/endpoint/getlogs.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getlogs-topics",
+    "page": "api-documentation/endpoint/getlogs-topics.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getlogs-address-topics",
+    "page": "api-documentation/endpoint/getlogs-address-topics.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "ethsupply",
+    "page": "api-documentation/endpoint/ethsupply.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "ethsupply2",
+    "page": "api-documentation/endpoint/ethsupply2.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "ethprice",
+    "page": "api-documentation/endpoint/ethprice.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "chainsize",
+    "page": "api-documentation/endpoint/chainsize.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "nodecount",
+    "page": "api-documentation/endpoint/nodecount.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "nodecounthistory",
+    "page": "api-documentation/endpoint/nodecounthistory.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "dailytxnfee",
+    "page": "api-documentation/endpoint/dailytxnfee.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/transactions"
+  },
+  {
+    "topic": "dailynewaddress",
+    "page": "api-documentation/endpoint/dailynewaddress.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses"
+  },
+  {
+    "topic": "dailyensregister",
+    "page": "api-documentation/endpoint/dailyensregister.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "dailynetutilization",
+    "page": "api-documentation/endpoint/dailynetutilization.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/stats"
+  },
+  {
+    "topic": "dailyavghashrate",
+    "page": "api-documentation/endpoint/dailyavghashrate.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "dailytx",
+    "page": "api-documentation/endpoint/dailytx.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/stats/charts/transactions"
+  },
+  {
+    "topic": "dailyavgnetdifficulty",
+    "page": "api-documentation/endpoint/dailyavgnetdifficulty.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "ethdailyprice",
+    "page": "api-documentation/endpoint/ethdailyprice.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/stats/charts/market"
+  },
+  {
+    "topic": "getstatus",
+    "page": "api-documentation/endpoint/getstatus.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "gettxreceiptstatus",
+    "page": "api-documentation/endpoint/gettxreceiptstatus.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "tokensupply",
+    "page": "api-documentation/endpoint/tokensupply.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "tokensupplyhistory",
+    "page": "api-documentation/endpoint/tokensupplyhistory.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "tokenbalance",
+    "page": "api-documentation/endpoint/tokenbalance.md",
+    "status": "Observed compatibility request",
+    "counterpart": null
+  },
+  {
+    "topic": "tokenbalancehistory",
+    "page": "api-documentation/endpoint/tokenbalancehistory.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "topholders",
+    "page": "api-documentation/endpoint/topholders.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/tokens/{address_hash_param}/holders"
+  },
+  {
+    "topic": "tokenholderlist",
+    "page": "api-documentation/endpoint/tokenholderlist.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/tokens/{address_hash_param}/holders"
+  },
+  {
+    "topic": "tokenholdercount",
+    "page": "api-documentation/endpoint/tokenholdercount.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/tokens/{address_hash_param}/counters"
+  },
+  {
+    "topic": "tokeninfo",
+    "page": "api-documentation/endpoint/tokeninfo.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/tokens/{address_hash_param}"
+  },
+  {
+    "topic": "addresstokenbalance",
+    "page": "api-documentation/endpoint/addresstokenbalance.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}/token-balances"
+  },
+  {
+    "topic": "addresstokennftbalance",
+    "page": "api-documentation/endpoint/addresstokennftbalance.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}/nft/collections"
+  },
+  {
+    "topic": "addresstokennftinventory",
+    "page": "api-documentation/endpoint/addresstokennftinventory.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}/nft"
+  },
+  {
+    "topic": "txnbridge",
+    "page": "api-documentation/endpoint/txnbridge.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getdeposittxs",
+    "page": "api-documentation/endpoint/getdeposittxs.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getwithdrawaltxs",
+    "page": "api-documentation/endpoint/getwithdrawaltxs.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "forwardresolve",
+    "page": "api-documentation/endpoint/forwardresolve.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getaddresstag",
+    "page": "api-documentation/endpoint/getaddresstag.md",
+    "status": "Verified V2 alternative; exact action parity not asserted",
+    "counterpart": "/api/v2/addresses/{address_hash_param}"
+  },
+  {
+    "topic": "getapilimit",
+    "page": "api-documentation/endpoint/getapilimit.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "chainlist",
+    "page": "api-documentation/endpoint/chainlist.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getlabelmasterlist-v2",
+    "page": "api-documentation/endpoint/getlabelmasterlist-v2.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "exportaddresstags-v2",
+    "page": "api-documentation/endpoint/exportaddresstags-v2.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "getlabelmasterlist",
+    "page": "api-documentation/endpoint/getlabelmasterlist.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  },
+  {
+    "topic": "exportaddresstags",
+    "page": "api-documentation/endpoint/exportaddresstags.md",
+    "status": "Topic documented; dedicated service not established",
+    "counterpart": null
+  }
+]

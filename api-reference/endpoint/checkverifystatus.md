@@ -1,0 +1,9 @@
+# TurkScan® Verification Job Status
+
+The deployed-version controller accepts a guid for verification-job status. Only use a real job identifier returned by a legitimate submission; no fabricated successful job is provided.
+
+Read [Contract Verification API](../contract-verification.md) for source-confirmed routes, required compiler inputs, example publication requests, acceptance semantics and error cases. Read [Smart Contracts API](../smart-contracts.md) to inspect the actual published result.
+
+No verification request, deployment or ownership signature was submitted during this audit. The distinction preserves on-chain and publication state while documenting the real workflow.
+
+**Integration notes:** Keep native amounts in 18-decimal TURK base units, preserve large integer precision, distinguish null from zero and apply bounded retries to safe reads. See [errors](../error-handling.md) and [rate limits](../rate-limits.md).

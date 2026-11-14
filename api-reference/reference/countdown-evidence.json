@@ -1,0 +1,26 @@
+{
+  "/api/v2/blocks/3152501/countdown": {
+    "url": "https://turkscan.com/api/v2/blocks/3152501/countdown",
+    "status": 200,
+    "body": {
+      "countdown_block_number": "3152501",
+      "current_block_number": "3142501",
+      "estimated_time_in_seconds": "52530.0",
+      "remaining_blocks_count": "10000"
+    }
+  },
+  "/api?module=block&action=getblockcountdown&blockno=3152501": {
+    "url": "https://turkscan.com/api?module=block&action=getblockcountdown&blockno=3152501",
+    "status": 200,
+    "body": {
+      "message": "OK",
+      "result": {
+        "CountdownBlock": "3152501",
+        "CurrentBlock": "3142501",
+        "EstimateTimeInSec": "52530.0",
+        "RemainingBlock": "10000"
+      },
+      "status": "1"
+    }
+  }
+}

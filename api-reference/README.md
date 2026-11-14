@@ -1,0 +1,26 @@
+# TurkScan® API Reference
+
+Use the public API to read indexed Turkchain® data. This reference includes exact deployed URLs, parameter requirements, captured responses and explicit compatibility limits. Public reads are distinct from private account features and state-changing verification submissions.
+
+* [TurkScan® API Documentation](introduction.md)
+* [Authentication and API Keys](authentication.md)
+* [Rate Limits](rate-limits.md)
+* [Accounts API](accounts.md)
+* [Addresses API](addresses.md)
+* [Transactions API](transactions.md)
+* [Tokens API](tokens.md)
+* [Blocks API](blocks.md)
+* [Logs API](logs.md)
+* [Statistics API](stats.md)
+* [Error Handling](error-handling.md)
+* [TurkScan® API V2 Overview](api-v2.md)
+* [Smart Contracts API](smart-contracts.md)
+* [Contract Verification API](contract-verification.md)
+* [NFT API](nft.md)
+* [Search API](search.md)
+* [Pagination](pagination.md)
+* [Request and Response Examples](request-examples.md)
+* [TurkScan® Module/Action API](compatibility.md)
+* [API Compatibility Matrix](compatibility-matrix.md)
+* [API Operation Availability](availability.md)
+* [Configuration and Indexed Data API](configuration.md)

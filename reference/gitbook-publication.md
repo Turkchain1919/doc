@@ -11,3 +11,22 @@ In the **existing** GitBook space, inspect Git Sync and confirm repository `Turk
 For the custom domain, open the existing site's domain settings and confirm `doc.turkscan.com`. GitBook supplies the exact DNS Type, Name and Target for that site. The authoritative target must be read there; this audit does not invent a CNAME target. Public DNS is proxied through Cloudflare and does not expose the original target as a CNAME. Use GitBook hosting and TLS, with no docs Docker image, Nginx reverse proxy or separate server.
 
 The `.gitbook.yaml` file declares the repository's existing README/SUMMARY structure. It does not change the site's logo, theme or domain settings. See [GitBook custom-domain instructions](https://gitbook.com/docs/publish/custom-domain).
+
+
+## Main publication observed after merge
+
+PR #1 was merged to `main` as `d26f8d862859795182629335ece69cdf1ecebf66`. All 146 navigation URLs returned HTTP 200 after following GitBook redirects, and the new chain configuration and compatibility content were checked. The user reports operating GitBook sync manually; this observation does not establish that future sync is automatic.
+
+## Existing API and Help spaces
+
+The site also exposes an existing API Reference section and Help Center. Their sources are prepared as project directories in the **same** repository and branch:
+
+| Existing GitBook area | Repository | Branch | Project directory |
+| --- | --- | --- | --- |
+| Main documentation | `Turkchain1919/doc` | `main` | `/` (keep current setting) |
+| API Reference | `Turkchain1919/doc` | `main` | `api-reference` |
+| Help Center | `Turkchain1919/doc` | `main` | `help-center` |
+
+Choose the project directory in each existing space's Git Sync configuration and import in the GitHub → GitBook direction. Each directory has its own README, SUMMARY and GitBook configuration. Keep the existing site-section URLs, logo, theme and Changelog. Do not create a replacement space. The API's previous page slugs (authentication, accounts, blocks, transactions, tokens, logs, stats, rate-limits and error-handling) are retained. Captured previous public content is in [the repository snapshot](previous-gitbook-api-pages.json).
+
+These two directories are generated publication views of the canonical API and FAQ files. Update canonical files and run `python3 tools/generate_spaces.py`; do not maintain competing manual copies. The split is necessary because Git Sync operates per existing space. [GitBook describes monorepo project directories here](https://gitbook.com/docs/changelog/2023-product-updates).

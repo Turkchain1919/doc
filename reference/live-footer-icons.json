@@ -1,0 +1,37 @@
+[
+  {
+    "label": "API Documentation",
+    "url": "https://turkscan.com/api-docs",
+    "icon": "#navigation/api_docs"
+  },
+  {
+    "label": "Developer Guides",
+    "url": "https://doc.turkscan.com/developers/network-configuration",
+    "icon": "#docs"
+  },
+  {
+    "label": "Documentation",
+    "url": "https://doc.turkscan.com/",
+    "icon": "#docs"
+  },
+  {
+    "label": "API Reference",
+    "url": "https://doc.turkscan.com/api-documentation/introduction",
+    "icon": "#navigation/api_docs"
+  },
+  {
+    "label": "Help Center",
+    "url": "https://doc.turkscan.com/faq/frequently-asked-questions",
+    "icon": "#docs"
+  },
+  {
+    "label": "Network Information",
+    "url": "https://doc.turkscan.com/introduction/network-information",
+    "icon": "#docs"
+  },
+  {
+    "label": "Documentation",
+    "url": "https://doc.turkscan.com/",
+    "icon": "#docs"
+  }
+]

@@ -6688,10 +6688,16 @@
       }
     }
   },
+  "externalDocs": {
+    "description": "TurkScan API Documentation",
+    "url": "https://doc.turkscan.com/api-documentation/introduction"
+  },
   "info": {
+    "contact": {
+      "url": "https://turkscan.com"
+    },
     "title": "TurkScan Explorer API",
-    "version": "12.0.1",
-    "description": "TurkScan API V2 deployed contract snapshot; backend 12.0.1. Availability is documented separately."
+    "version": "12.0.1"
   },
   "openapi": "3.0.0",
   "paths": {
@@ -20173,9 +20179,5 @@
     {
       "name": "legacy"
     }
-  ],
-  "externalDocs": {
-    "description": "TurkScan API Documentation",
-    "url": "https://doc.turkscan.com/api-documentation/introduction"
-  }
+  ]
 }

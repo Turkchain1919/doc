@@ -1,0 +1,86 @@
+[
+  {
+    "locale": "en-US",
+    "status": 200,
+    "title": "TurkScan API Documentation | Turkchain Mainnet Explorer | Turkscan",
+    "header": "TurkScan API Documentation",
+    "apiV2": true,
+    "oldApiHeading": false,
+    "specs": [
+      {
+        "url": "https://turkscan.com/api/v2/openapi",
+        "status": 200
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "links": [
+      {
+        "text": "Developer Guides",
+        "url": "https://doc.turkscan.com/developers/network-configuration"
+      },
+      {
+        "text": "Documentation",
+        "url": "https://doc.turkscan.com/"
+      },
+      {
+        "text": "API Reference",
+        "url": "https://doc.turkscan.com/api-documentation/introduction"
+      },
+      {
+        "text": "Help Center",
+        "url": "https://doc.turkscan.com/faq/frequently-asked-questions"
+      },
+      {
+        "text": "Network Information",
+        "url": "https://doc.turkscan.com/introduction/network-information"
+      },
+      {
+        "text": "Documentation",
+        "url": "https://doc.turkscan.com/"
+      }
+    ]
+  },
+  {
+    "locale": "tr-TR",
+    "status": 200,
+    "title": "TurkScan API Dokümantasyonu | Turkchain Mainnet Explorer | Turkscan",
+    "header": "TurkScan API Dokümantasyonu",
+    "apiV2": true,
+    "oldApiHeading": false,
+    "specs": [
+      {
+        "url": "https://turkscan.com/api/v2/openapi",
+        "status": 200
+      }
+    ],
+    "errors": [],
+    "failed": [],
+    "links": [
+      {
+        "text": "Developer Guides",
+        "url": "https://doc.turkscan.com/developers/network-configuration"
+      },
+      {
+        "text": "Belgeler",
+        "url": "https://doc.turkscan.com/"
+      },
+      {
+        "text": "API Reference",
+        "url": "https://doc.turkscan.com/api-documentation/introduction"
+      },
+      {
+        "text": "Help Center",
+        "url": "https://doc.turkscan.com/faq/frequently-asked-questions"
+      },
+      {
+        "text": "Network Information",
+        "url": "https://doc.turkscan.com/introduction/network-information"
+      },
+      {
+        "text": "Belgeler",
+        "url": "https://doc.turkscan.com/"
+      }
+    ]
+  }
+]

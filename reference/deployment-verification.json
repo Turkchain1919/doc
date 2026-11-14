@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-14",
+  "services_changed": [
+    "frontend",
+    "backend",
+    "turkscan-admin"
+  ],
+  "healthy_production_services": 11,
+  "other_services_unchanged": 8,
+  "worker_unchanged": true,
+  "api_contract_unchanged": true,
+  "openapi_paths": 114,
+  "api_branding": {
+    "title": "TurkScan Explorer API",
+    "externalDocs": "https://doc.turkscan.com/api-documentation/introduction"
+  },
+  "tests": {
+    "next_source_build": "passed; native Linux/amd64 Node 24.21.0",
+    "typescript": "passed",
+    "api_regressions": 23,
+    "eslint_changed_files": "passed; existing plugin deprecation notice",
+    "live_browser_locales": [
+      "en-US",
+      "tr-TR"
+    ],
+    "live_browser_page_errors": 0,
+    "live_browser_asset_errors": 0,
+    "footer_link_icon_pairs": 6,
+    "broader_metadata_suite": "9 passed; 1 pre-existing OG-image snapshot mismatch reproduced with original source"
+  },
+  "build_method": {
+    "frontend": "Native source build packaged onto the unchanged Alpine runtime/dependency image; candidate and live browser checks passed",
+    "backend": "Only the OpenAPI presentation module was recompiled against the unchanged 12.0.1 release; contract comparison passed",
+    "admin": "Current source app.py packaged onto the prior runtime; syntax and live footer configuration verified"
+  },
+  "docs_docker_used": false,
+  "docs_proxy_or_hosting_created": false,
+  "transactions_signed_or_broadcast": 0,
+  "verification_jobs_submitted": 0,
+  "gitbook": {
+    "main_content_observed": true,
+    "operator_reports_manual_sync": true,
+    "separate_space_project_directories": {
+      "API Reference": "api-reference",
+      "Help Center": "help-center"
+    },
+    "separate_spaces_latest_pages_observed": false,
+    "exact_custom_domain_dns_target": "Not exposed through proxied public DNS; existing GitBook HTTPS works"
+  }
+}

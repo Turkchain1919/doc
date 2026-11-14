@@ -30,3 +30,8 @@ The site also exposes an existing API Reference section and Help Center. Their s
 Choose the project directory in each existing space's Git Sync configuration and import in the GitHub → GitBook direction. Each directory has its own README, SUMMARY and GitBook configuration. Keep the existing site-section URLs, logo, theme and Changelog. Do not create a replacement space. The API's previous page slugs (authentication, accounts, blocks, transactions, tokens, logs, stats, rate-limits and error-handling) are retained. Captured previous public content is in [the repository snapshot](previous-gitbook-api-pages.json).
 
 These two directories are generated publication views of the canonical API and FAQ files. Update canonical files and run `python3 tools/generate_spaces.py`; do not maintain competing manual copies. The split is necessary because Git Sync operates per existing space. [GitBook describes monorepo project directories here](https://gitbook.com/docs/changelog/2023-product-updates).
+
+
+## Explorer integration validation
+
+The existing explorer frontend, backend and administrator service were updated on 14 November 2026. API branding and six administrator-managed documentation links/icons were verified live. The API path, schema, tag and security contracts remained unchanged across 114 paths. See [deployment evidence](deployment-verification.json), [browser results](live-api-browser.json) and [footer icon pairs](live-footer-icons.json). These are explorer application changes; documentation continues to use GitHub and GitBook with no documentation container or reverse proxy.

@@ -1,31 +1,7 @@
----
-description: '# Flattened Source Upload'
----
-
 # Flattened Source Upload
 
-```
-Contracts with multiple files may require flattening before submission.
-```
+Flattening combines source files for a single-file verification flow. It can alter imports, SPDX headers, pragmas and metadata, so the flattened output must still reproduce the deployed bytecode.
 
-### What is Flattening?
+Prefer Standard JSON Input with original sources and compiler settings for multi-file projects. Keep the exact compiler version, optimizer runs, EVM version, libraries and constructor arguments.
 
-```
-Flattening merges all imported Solidity files into a single file.
-```
-
-### When Required?
-
-```
-• Manual verification  
-• Older compiler setups  
-• No metadata JSON provided  
-```
-
-### Important
-
-```
-Remove duplicate SPDX identifiers  
-Ensure correct pragma version  
-Maintain import order  
-```
+Submit only code you are authorized to publish. Verification makes source public; it does not protect secrets embedded in source or deployment data. See [Contract Verification](contract-verification.md).

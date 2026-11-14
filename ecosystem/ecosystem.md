@@ -1,131 +1,16 @@
----
-description: '# Turkchain Ecosystem'
----
+# Turkchain® Ecosystem
 
-# Ecosystem
+| Resource | Entry point | Interpretation |
+| --- | --- | --- |
+| TurkScan® | https://turkscan.com | Public explorer and indexed APIs |
+| TurkDEX | https://dex.turkscan.com | Separate exchange application; inspect pool and contract state |
+| TurkBridge | [Cross-Chain Status](../cross-chain/overview.md) | No transfer route certified by this audit |
+| Native TURK | [Native currency](../introduction/native-turk.md) | Mainnet gas and native value |
+| Wrapped TURK | [Wrapper checks](../tokens/wrapped-turk.md) | No canonical wrapper established here |
+| Wallets | [Configuration](../getting-started/wallet-configuration.md) | EVM network setup; wallet support varies |
+| Developer resources | [Web3 Integration](../developers/web3-integration.md) | RPC, client and deployment guides |
+| Community | [Turkchain GitHub](https://github.com/Turkchain1919) | Confirm support links from official project resources |
 
-Founder: SERKAN KUL
+TurkScan® uses Blockscout-based infrastructure. The explorer, DEX and bridge are distinct systems; an explorer listing is not an operational or financial guarantee for another application.
 
-```
-This section provides official resources, infrastructure endpoints, developer tools, and brand materials related to the Turkchain network.
-```
-
-## 🔗 Official Links
-
-### [🔗 Official Links](https://turkchain1919.com)
-
-Official website of the Turkchain Layer-1 network.
-
-### Blockchain Explorer
-
-```
-https://turkscan.com
-```
-
-```
-Official Turkchain blockchain explorer powered by Zinzir Explorer Core.
-```
-
-### RPC Endpoint
-
-```
-https://rpc.turkscan.com
-```
-
-Public JSON-RPC endpoint for interacting with Turkchain.\
-Chain ID: 1919\
-Native Currency: TURK\
-Decimals: 18
-
-## 🧑‍💻 Developer Tools
-
-### JSON-RPC Access
-
-```
-https://rpc.turkscan.com
-```
-
-Compatible with:
-
-* Hardhat
-* Foundry
-* Ethers.js
-* Web3.js
-* MetaMask
-
-### TurkScan API
-
-```
-https://api.turkscan.com/api
-```
-
-```
-Etherscan-compatible API for blockchain data access.
-```
-
-## 🏗 Infrastructure Components
-
-```
-• Layer-1 sovereign blockchain  
-• EVM-compatible execution environment  
-• Validator-based consensus  
-• Deterministic finality  
-• Indexed explorer infrastructure  
-```
-
-## 📂 GitHub
-
-[https://github.com/Turkchain1919](https://github.com/Turkchain1919)
-
-```
-Official repositories including node software, tools, and developer utilities.
-```
-
-## 📢 Social Media
-
-### Social Channels
-
-Twitter: [https://x.com/Turkchain1919](https://x.com/Turkchain1919)\
-Telegram: [https://t.me/Turkchain1919](https://t.me/Turkchain1919)\
-Discord: [https://discord.gg/p8srM9gV3P](https://discord.gg/p8srM9gV3P)
-
-Twitch: [https://www.twitch.tv/turkchain1919](https://www.twitch.tv/turkchain1919)\
-Kick: [https://kick.com/turkchain1919/](https://kick.com/turkchain1919/)\
-Tiktok: [https://www.tiktok.com/@turkchain1919](https://www.tiktok.com/@turkchain1919)\
-Youtube: [https://www.youtube.com/@Turkchain1919](https://www.youtube.com/@Turkchain1919)
-
-Instagram: [https://www.instagram.com/turkchain1919](https://www.instagram.com/turkchain1919)
-
-
-
-
-
-
-
-
-
-## 🎨 Brand Assets
-
-```
-## Brand Assets
-```
-
-Official Turkchain brand assets include:
-
-• Logo (SVG / PNG)\
-• Icon set\
-• Color palette\
-• Typography guidelines\
-• Media kit
-
-Download official Turkchain media kit.
-
-## 📊 Network Identity Summary
-
-Network Name: Turkchain\
-Network Type: Layer-1\
-Chain ID: 1919\
-Native Token: TURK\
-Decimals: 18\
-Explorer: https://turkscan.com\
-RPC: https://rpc.turkscan.com
+The documentation source is [Turkchain1919/doc](https://github.com/Turkchain1919/doc) and the publication address is `https://doc.turkscan.com`.

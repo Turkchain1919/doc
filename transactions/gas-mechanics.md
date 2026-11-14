@@ -1,32 +1,7 @@
----
-description: '# Gas Mechanics'
----
-
 # Gas Mechanics
 
-```
-Gas represents the computational cost required to execute operations on Turkchain.
-```
+The gas limit is an execution cap; gas used is actual consumed work reported by the receipt. Effective gas price is the price paid per unit. The explorer's fee represents the charged execution cost in TURK.
 
-### Gas Components
+For receipts with `gasUsed` and `effectiveGasPrice`, multiply those integers to obtain base units, then divide by `10^18` for TURK. Decode JSON-RPC hexadecimal quantities before arithmetic. Do not confuse the sender's maximum fee setting with the actual fee.
 
-• Gas Limit — Maximum gas the sender allows\
-• Gas Used — Actual gas consumed\
-• Gas Price — Cost per unit of gas (in TURK)\
-• Transaction Fee — Gas Used × Gas Price
-
-### Gas Calculation Example
-
-```
-Gas Used: 21,000
-Gas Price: 5 Gwei
-
-Transaction Fee = 21,000 × 5 Gwei
-```
-
-### Dynamic Gas Model
-
-```
-Turkchain uses an EVM-compatible gas accounting model. Smart contract complexity directly affects gas usage.
-```
-
+Failed execution may still cost gas. `eth_estimateGas` is a simulation against current state, not a reservation or guarantee. See [Gas Strategy](../developers/gas-strategy.md).

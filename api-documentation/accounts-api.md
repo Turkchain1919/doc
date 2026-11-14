@@ -1,38 +1,7 @@
----
-description: '# Accounts API'
----
-
 # Accounts API
 
-```
-Retrieve account balances and transaction lists.
-```
+Public address data is available through the [Address API](addresses-api.md). This includes balances, transactions, token holdings, logs and NFT collections where indexed.
 
-### Get Balance
+An explorer login account is different from an EVM address. Private tags, API-key management, watchlists and ownership challenges can require a session and must not be represented as anonymous public endpoints. This audit did not create or modify any private account data.
 
-```
-// Some code
-module=account
-action=balance
-address=0x...
-tag=latest
-```
-
-### Get Transaction List
-
-```
-module=account
-action=txlist
-address=0x...
-startblock=0
-endblock=99999999
-sort=asc
-```
-
-### Get Token Transfers
-
-```
-module=account
-action=tokentx
-address=0x...
-```
+For module/action balance and transaction requests, see [Compatibility API](compatibility-api.md).

@@ -1,37 +1,3 @@
----
-description: '# RPC & Connection Issues'
----
+# Common RPC Errors
 
-# Common RPC errors
-
-```
-If you experience RPC errors when connecting to Turkchain, review the following common causes.
-```
-
-### Common RPC Errors
-
-```
-Error: Invalid JSON RPC response  
-Error: Network Error  
-Error: Timeout exceeded  
-Error: Invalid chain ID  
-```
-
-### Possible Causes
-
-```
-• Incorrect RPC URL  
-• Incorrect Chain ID (must be 1919)  
-• Firewall blocking requests  
-• Node temporary unavailability  
-• Malformed JSON request  
-```
-
-### Recommended Solution
-
-```
-1. Verify RPC URL: https://rpc.turkscan.com  
-2. Confirm Chain ID: 1919  
-3. Retry request  
-4. Check internet connection  
-```
+Check endpoint reachability, JSON-RPC method spelling, parameter encoding and chain ID. HTTP 200 can contain a JSON-RPC error. A missing receipt may mean pending, unknown or wrong network. Archive-state and trace methods are not guaranteed on public RPC.

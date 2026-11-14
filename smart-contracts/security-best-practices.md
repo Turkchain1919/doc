@@ -1,35 +1,7 @@
----
-description: '# Security Best Practices'
----
+# Contract Security Considerations
 
-# Security Best Practices
+Review access controls, upgrade paths, reentrancy, oracle dependencies, token approvals and external calls. Test expected failures as well as happy paths. Use maintained libraries and independent review for contracts that control valuable assets.
 
-```
-Smart contract security is critical in decentralized systems.
-```
+Verify source and bytecode, but do not treat a source match or Certified label as an audit. Inspect proxy implementations and admin permissions. Simulate sensitive transactions and use bounded allowances when practical.
 
-### Common Vulnerabilities
-
-```
-• Reentrancy  
-• Integer overflow / underflow  
-• Access control misconfiguration  
-• Unchecked external calls  
-• Improper proxy initialization  
-```
-
-### Recommendations
-
-```
-• Use audited libraries  
-• Verify contracts publicly  
-• Test on local environments  
-• Simulate transactions  
-• Limit admin privileges  
-```
-
-### Transparency
-
-```
-Verified contracts improve ecosystem transparency and trust.
-```
+Never enter a seed phrase or private key into a verification form. Avoid publishing credentials in source, deployment scripts or compiler inputs. See [Developer Security](../developers/security-best-practices.md).

@@ -1,28 +1,7 @@
----
-description: '# Block Overview'
----
+# Block Explorer
 
-# Block Overview
+Open the Blocks page on TurkScan® to inspect indexed canonical blocks. Each entry links its height, hash, timestamp, transaction count, validator/miner representation and gas usage where available.
 
-```
-A block represents a batch of validated transactions permanently recorded on the Turkchain ledger.
-```
+Block height identifies a position; block hash identifies a specific block. Use the hash when a data pipeline must detect a changed canonical block. The explorer can lag the RPC while indexing.
 
-```
-## Block Details
-```
-
-Each block page on TurkScan includes:
-
-• Block Number\
-• Timestamp\
-• Validator\
-• Transactions Count\
-• Gas Used\
-• Gas Limit\
-• Block Size\
-• Parent Block\
-• State Root\
-• Transactions Root\
-• Receipts Root\
-• Hash
+See [Block Structure](block-structure.md), [Validator Information](validator-information.md) and [Blocks API](../api-documentation/blocks-api.md).

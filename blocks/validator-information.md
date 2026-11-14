@@ -1,43 +1,7 @@
-# Validator Information
+# Validators
 
-```
-Turkchain operates with a validator-based consensus mechanism.
-```
+The explorer can show an EVM block producer address and blocks associated with an address. This is not necessarily a complete consensus validator registry, voting-power table or staking dashboard.
 
-### Validator Role
+The inspected deployment reports `chain_type: default`. Chain-specific validator APIs for other networks are not documented as Turkchain® services. Obtain consensus identities and validator-set information from authoritative Turkchain node data before drawing conclusions.
 
-```
-## Role of Validators
-```
-
-Validators are responsible for:
-
-• Proposing blocks\
-• Verifying transactions\
-• Signing blocks\
-• Maintaining network security
-
-### Block Proposer
-
-```
-## Block Proposer
-```
-
-For each block, a validator is selected as proposer.
-
-The proposer:
-
-• Collects transactions from the mempool\
-• Executes them via the EVM\
-• Produces a valid block\
-• Broadcasts it to the network
-
-### Validator Display in TurkScan
-
-```
-## Validator Visibility
-```
-
-```
-TurkScan displays the validator address responsible for producing each block.
-```
+No fixed validator count, staking yield or validator commission is asserted here. See [Validator Security](../security/validator-security.md).

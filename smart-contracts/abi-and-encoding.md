@@ -1,30 +1,7 @@
----
-description: '# ABI & Encoding'
----
+# Contract ABI and Encoding
 
-# ABI & Encoding
+An ABI describes function names, argument types, outputs, events and custom errors. Clients use it to encode calls and decode returned data. It does not enforce the behavior of deployed code.
 
-```
-The Application Binary Interface (ABI) defines how contract functions are encoded and decoded.
-```
+Use the ABI produced by the exact build, or the verified contract response when available. Preserve integer precision with big integers. A selector can collide with another signature, so decoding by selector alone is insufficient.
 
-### Function Selector
-
-```
-## Function Selector
-```
-
-The first 4 bytes of call data represent the function selector.
-
-It is calculated as:
-
-keccak256("functionName(parameterTypes)")
-
-### Example
-
-Slash → /code 0xa9059cbb
-
-```
-Represents transfer(address,uint256)
-```
-
+Constructor arguments are ABI-encoded after creation bytecode. See [Constructor Arguments](constructor-arguments.md) and [Proxy Contracts](proxy-contracts.md).

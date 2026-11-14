@@ -1,17 +1,7 @@
-# About Turkchain
+# About Turkchain®
 
-Turkchain is a sovereign Layer-1 blockchain network designed with a modular consensus engine and native EVM compatibility.
+Turkchain® Mainnet provides EVM execution for accounts, TURK transfers and smart contracts. TurkScan® indexes its public blocks, transactions, token events and verified contract source.
 
-Network Parameters:
+The native currency is **TURK**, with 18 decimals. TURK is used for execution fees; an ERC-20 bearing the same name is a separate asset. Never identify an asset from its ticker alone.
 
-Network Name: Turkchain\
-Chain ID: 1919\
-RPC Endpoint: https://rpc.turkscan.com\
-Explorer: https://turkscan.com\
-Native Coin: TC\
-Symbol: TURK\
-Decimals: 18\
-Virtual Machine: EVM Compatible\
-Network Type: Layer-1
-
-<table><thead><tr><th></th><th></th><th data-hidden></th></tr></thead><tbody><tr><td>Network Name</td><td>Turkchain</td><td></td></tr><tr><td>Chain ID</td><td>1919</td><td></td></tr><tr><td>RPC Endpoint</td><td>https://rpc.turkscan.com</td><td></td></tr><tr><td>Explorer</td><td><a href="https://turkscan.com">https://turkscan.com</a></td><td></td></tr><tr><td>Native Coin</td><td>TC</td><td></td></tr><tr><td>Symbol</td><td>TURK</td><td></td></tr><tr><td>Decimals</td><td>18</td><td></td></tr><tr><td>Virtual Machine</td><td>EVM Compatible</td><td></td></tr><tr><td>Dex</td><td>https://dex.turkscan.com</td><td></td></tr></tbody></table>
+See [Network Information](network-information.md) for connection values and [Architecture Overview](architecture-overview.md) for the separation between chain execution and explorer indexing.

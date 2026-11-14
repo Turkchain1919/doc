@@ -1,35 +1,7 @@
----
-description: '# Proxy Contracts'
----
-
 # Proxy Contracts
 
-```
-Proxy contracts delegate execution logic to an implementation contract.
-```
+A proxy delegates execution to an implementation. The address users call can remain constant while its behavior changes after an upgrade. TurkScan® can show detected implementations where indexed.
 
-### Delegatecall Mechanism
+Verify the proxy and implementation separately. Inspect upgrade authority, admin roles, initialization state and storage-layout compatibility. Read/write operations normally target the proxy address using the correct implementation ABI.
 
-```
-## Delegatecall
-```
-
-```
-Proxy contracts forward calls using delegatecall, preserving storage context.
-```
-
-### Proxy Detection
-
-```
-## Proxy Detection
-```
-
-```
-TurkScan detects common proxy patterns and links to the implementation contract when identified.
-```
-
-### Upgradeability
-
-```
-Upgradeable contracts separate storage and logic, allowing logic updates without changing the proxy address.
-```
+Detection can be incomplete for custom patterns. A verified implementation does not prove that every proxy using it is correctly initialized or safely administered. Track implementation changes over time.

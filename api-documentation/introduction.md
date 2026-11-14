@@ -1,33 +1,17 @@
----
-description: '# API Introduction'
----
+# TurkScan® API Documentation
 
-# Introduction
+TurkScan® exposes indexed explorer data and separate network RPC access.
 
-The TurkScan API provides programmatic access to Turkchain blockchain data.
+| Interface | Base URL | Purpose |
+| --- | --- | --- |
+| Explorer API V2 | `https://turkscan.com/api/v2` | Indexed resources, cursor pagination |
+| Explorer compatibility API | `https://turkscan.com/api` | Selected module/action requests |
+| Network JSON-RPC | `https://rpc.turkscan.com` | EVM node reads and signed transaction submission |
+| Interactive documentation | `https://turkscan.com/api-docs` | Explorer API interface |
+| Live OpenAPI | `https://turkscan.com/api/v2/openapi` | Deployed machine-readable contract |
 
-It follows an Etherscan-compatible structure for seamless integration.
+The bare `/api/v2` path returns an unknown-action error; request a resource such as `/api/v2/stats`. The audited backend reports version `12.0.1` and chain type `default`.
 
-### Base Endpoint
+The reference is based on the deployed OpenAPI and read-only HTTP observations from 14 November 2026. It separates working reads, unsuccessful observations and operations not exercised. A declared upstream route alone is not treated as proof of support.
 
-### Base URL
-
-[https://api.turkscan.com/api](https://api.turkscan.com/api)
-
-### Request Format
-
-```
-// Some code
-https://api.turkscan.com/api
-   ?module=account
-   &action=balance
-   &address=0x...
-   &tag=latest
-   &apikey=YourApiKey
-```
-
-### Response Format
-
-```
-All responses are returned in JSON format.
-```
+Start with [API V2](api-v2.md), [Compatibility Matrix](compatibility-matrix.md), [Pagination](pagination.md), [Errors](error-handling.md) and [Examples](request-examples.md). Raw [audit evidence](../reference/endpoint-evidence.json) is stored in this repository; examples are dated snapshots, not current balances or endorsements.

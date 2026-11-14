@@ -1,40 +1,7 @@
----
-description: '# ERC-20 Tokens'
----
-
 # ERC-20 Tokens
 
-```
-ERC-20 is the standard for fungible tokens on Turkchain.
-```
+ERC-20 defines fungible token interfaces such as `balanceOf`, `transfer`, `approve` and `allowance`. Each contract defines its own decimals and supply behavior; do not assume 18 decimals for every token.
 
-```
-function totalSupply() public view returns (uint256);
-function balanceOf(address account) public view returns (uint256);
-function transfer(address recipient, uint256 amount) public returns (bool);
-function approve(address spender, uint256 amount) public returns (bool);
-function transferFrom(address sender, address recipient, uint256 amount) public returns (bool);
-```
+An approval permits a spender to transfer tokens subject to the contract's rules. It is not itself a payment or swap. Review spender and amount and revoke unused approvals through a trusted interface when appropriate.
 
-### ERC-20 Events
-
-```
-event Transfer(address indexed from, address indexed to, uint256 value);
-event Approval(address indexed owner, address indexed spender, uint256 value);
-```
-
-TurkScan automatically decodes ERC-20 Transfer and Approval events.
-
-### Supply & Holders
-
-```
-## Supply & Holder Tracking
-```
-
-TurkScan tracks:
-
-• Circulating supply\
-• Total supply\
-• Holder distribution\
-• Top holders list\
-• Token transfer history
+TurkScan® exposes indexed holders, transfers and metadata. Fee-on-transfer, rebasing or non-standard contracts may need special accounting. Verify balances directly when indexed data is delayed.

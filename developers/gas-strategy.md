@@ -1,34 +1,7 @@
----
-description: '# Gas Strategy'
----
-
 # Gas Strategy
 
-```
-Gas optimization is critical for cost-efficient smart contract deployment and interaction.
-```
+Estimate the intended call with its real sender, recipient, value and calldata. Check native TURK balance covers value plus gas. Use integer arithmetic and preserve the distinction between gas units, gwei and TURK.
 
-### Recommended Approach
+Set bounded fee policies appropriate to your application. A gas estimate can fail because the call reverts; increasing the limit does not fix a missing approval, expired deadline or access restriction.
 
-```
-• Query eth_gasPrice before sending transactions  
-• Avoid hardcoding gas price  
-• Estimate gas before execution  
-```
-
-### Gas Estimation Example
-
-```
-// Some code
-const estimatedGas = await contract.method().estimateGas();
-```
-
-### Congestion Strategy
-
-```
-During network congestion:
-
-• Increase gas price moderately  
-• Avoid excessive gas limit  
-• Retry with replacement transaction if needed  
-```
+Track pending nonces and receipt status. Do not submit repeated transactions just because an explorer has not indexed the first one. See [Gas Mechanics](../transactions/gas-mechanics.md).

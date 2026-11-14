@@ -1,28 +1,7 @@
----
-description: '# Token Overview'
----
+# Token Standards and Information
 
-# Token Overview
+TURK is the network's native currency. ERC-20, ERC-721 and ERC-1155 assets are contracts that follow different interfaces; their names and symbols can be duplicated by anyone.
 
-Tokens on Turkchain are smart contracts deployed using EVM standards.
+TurkScan® indexes token metadata, transfers and holders where supported. Search and listing are discovery features, not approvals. Use the full contract address as the asset identifier and token ID for NFTs.
 
-TurkScan indexes and displays all supported token standards, including ERC-20, ERC-721, and ERC-1155.
-
-### ## Token Page Details
-
-###
-
-Each token page includes:
-
-• Token Name\
-• Symbol\
-• Contract Address\
-• Total Supply\
-• Decimals (ERC-20)\
-• Holders Count\
-• Transfer Count\
-• Contract Verification Status\
-• Token Transfers Tab\
-• Holders Tab\
-• Analytics (if available)
-
+See [ERC-20](erc-20-tokens.md), [ERC-721](erc-721-nft.md), [ERC-1155](erc-1155.md), [Verification](token-verification.md) and [Wrapped TURK](wrapped-turk.md).

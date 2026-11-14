@@ -1,31 +1,5 @@
----
-description: '# Supply Metrics'
----
-
 # Supply Metrics
 
-```
-Supply metrics track the circulating and total supply of TURK.
-```
+Native supply, token total supply and circulating supply are different concepts. The compatibility `ethsupply` endpoint returned differing observations in the audit; this is not validated TURK monetary supply. Do not infer circulating supply or market cap from unavailable price and supply fields.
 
-### Total Supply
-
-```
-Total supply includes all minted TURK tokens on Turkchain.
-```
-
-### Circulating Supply
-
-```
-## Circulating Supply
-```
-
-```
-Circulating supply excludes locked, reserved, or unissued tokens (if applicable).
-```
-
-### Inflation / Emission
-
-```
-Network emission rate depends on protocol-level economic parameters.
-```
+See [Statistics API](../api-documentation/stats-api.md) for exact requests and captured responses.

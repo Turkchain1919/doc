@@ -1,44 +1,7 @@
----
-description: '# Token Metadata & Supply Analytics'
----
+# Token Metadata and Supply
 
-# Token Metadata & Supply Analytics
+Token metadata can include name, symbol, decimals, total supply, icon and external website. Some fields come from contracts and others from explorer metadata providers or administrator review.
 
-```
-TurkScan displays token metadata and on-chain supply metrics.
-```
+Total supply is not automatically circulating supply. Burn addresses, bridges, vesting and wrapped assets require a stated methodology. Null market cap, price or circulating-supply fields mean unavailable data.
 
-### Metadata Fields
-
-```
-• Name  
-• Symbol  
-• Decimals  
-• Logo  
-• Website (if provided)  
-• Social links (if verified)  
-```
-
-### Logo Management
-
-```
-Token logos are displayed once verified and indexed by TurkScan infrastructure.
-
-Logos must:
-
-• Match token contract address  
-• Follow naming conventions  
-• Be submitted in supported format  
-```
-
-### Supply Analytics
-
-```
-Analytics may include:
-
-• Total supply  
-• Mint events  
-• Burn events  
-• Supply changes over time  
-• Holder distribution charts  
-```
+Holder counts reflect indexed balances and may lag execution. For critical accounting, compare the indexed value with contract calls at a known block. See [Token Information](../using-blockscout/overviews/token-info.md).

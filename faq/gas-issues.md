@@ -1,31 +1,3 @@
----
-description: '# Gas & Fee Issues'
----
+# Gas Issues
 
-# Gas issues
-
-```
-Gas errors are among the most common blockchain issues.
-```
-
-### Common Gas Errors
-
-```
-• Intrinsic gas too low  
-• Out of gas  
-• Replacement transaction underpriced  
-• Fee too low  
-```
-
-### Solutions
-
-```
-• Increase gas limit  
-• Increase gas price slightly  
-• Wait for network congestion to decrease  
-• Replace transaction with higher gas price  
-```
-
-### How to Estimate Gas
-
-eth\_estimateGasor Web3 library’s estimateGas() method.
+Reserve native TURK for gas. Token holdings do not automatically pay fees. A gas-estimation failure can be a contract revert rather than a low limit. Confirm the correct method and arguments; do not blindly raise fees.

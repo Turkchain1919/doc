@@ -1,40 +1,9 @@
----
-description: '# Hardhat Setup'
----
-
 # Hardhat Setup
 
-```
-Turkchain can be integrated into Hardhat as a custom network.
-```
+Install a compatible Hardhat release and its EVM tooling in your own project. Pin versions in your lockfile and follow the installed release's configuration format; Hardhat major versions use different network and secret-management APIs.
 
-### Installation
+Configure an HTTP network with URL `https://rpc.turkscan.com` and chain ID `1919`. Keep signer credentials in the tool's supported keystore or secret facility, outside version control. Confirm `eth_chainId` before deployment.
 
-```
-// Some code
-npm install --save-dev hardhat
-```
+Compile with an explicitly selected Solidity version, optimizer settings and an EVM target supported by the node. Test locally first. Preserve build artifacts and Standard JSON Input for [verification](../devs/verification/hardhat-verification-plugin.md).
 
-hardhat.config.js
-
-```
-// Some code
-require("@nomicfoundation/hardhat-toolbox");
-
-module.exports = {
-  solidity: "0.8.20",
-  networks: {
-    turkchain: {
-      url: "https://rpc.turkscan.com",
-      chainId: 1919,
-      accounts: ["PRIVATE_KEY"]
-    }
-  }
-};
-```
-
-### Deploy Command
-
-```
-npx hardhat run scripts/deploy.js --network turkchain
-```
+No deployment is performed by reading these instructions. Mainnet deployment spends real TURK.

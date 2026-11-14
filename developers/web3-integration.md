@@ -1,48 +1,7 @@
----
-description: '# Web3 Integration'
----
+# Web3 Development
 
-# Web3 Integration
+EVM clients can connect through the mainnet JSON-RPC endpoint. Define chain `1919` explicitly, use TURK with 18 decimals for native value, and use each contract's own decimals for token amounts.
 
-```
-Turkchain supports standard Web3 libraries.
-```
+Use typed ABI calls and big integers. Separate public read clients from wallet signing clients; a public RPC endpoint does not provide access to user keys. Verify the connected wallet chain before every write.
 
-### Ethers.js Example
-
-```
-// Some code
-import { ethers } from "ethers";
-
-const provider = new ethers.JsonRpcProvider(
-  "https://rpc.turkscan.com"
-);
-
-const blockNumber = await provider.getBlockNumber();
-console.log(blockNumber);
-```
-
-### Send Transaction
-
-```
-// Some code
-const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
-
-const tx = await wallet.sendTransaction({
-  to: "0xRecipientAddress",
-  value: ethers.parseEther("1.0")
-});
-
-await tx.wait();
-```
-
-### Web3.js Example
-
-```
-// Some code
-const Web3 = require("web3");
-const web3 = new Web3("https://rpc.turkscan.com");
-
-const block = await web3.eth.getBlockNumber();
-console.log(block);
-```
+See [Viem](viem-integration.md), [Ethers.js](ethers-integration.md), [MetaMask](metamask-integration.md), [API Integration](api-integration.md) and [Event Monitoring](event-monitoring.md).

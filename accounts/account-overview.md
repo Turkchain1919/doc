@@ -1,53 +1,7 @@
----
-description: >-
-  An account page on TurkScan provides a complete overview of a wallet or
-  contract address on the Turkchain network.
----
-
 # Account Overview
 
-```
-An account page on TurkScan provides a complete overview of a wallet or contract address on the Turkchain network.
-```
+An EVM address is a 20-byte identifier written as `0x` followed by 40 hexadecimal characters. It can identify an externally controlled account or a smart contract. The same textual address can exist on multiple networks with different balances and code.
 
-### Address Page Structure
+TurkScan® shows indexed TURK balance, transactions, token holdings and contract information. Account ownership comes from keys or contract rules; an explorer login or label does not grant control over an address.
 
-Each account page includes:
-
-• Address\
-• TURK balance\
-• Token balances\
-• Transaction count\
-• Transaction history\
-• Internal transactions\
-• Contract information (if applicable)
-
-### Balance Section
-
-```
-## Balance
-```
-
-The balance section displays:
-
-• Native TURK balance\
-• Fiat equivalent (if enabled)\
-• Token portfolio value
-
-### Transaction List
-
-```
-## Transaction History
-```
-
-The transaction list displays:
-
-• Transaction hash\
-• Block number\
-• Timestamp\
-• From / To\
-• Value transferred\
-• Gas used\
-• Status
-
-<figure><img src="../.gitbook/assets/Adsız.png" alt=""><figcaption></figcaption></figure>
+See [Address Details](address-details.md), [Token Holdings](token-holdings.md) and [Contract Accounts](contract-accounts.md).

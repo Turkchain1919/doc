@@ -1,33 +1,17 @@
----
-description: '# Using RPC'
----
-
 # Using RPC
 
-```
-Turkchain supports Ethereum-compatible JSON-RPC methods.
-```
+Send JSON-RPC requests with HTTP POST and `Content-Type: application/json`:
 
-### Curl Example
-
-```
+```bash
 curl https://rpc.turkscan.com \
-  -X POST \
-  -H "Content-Type: application/json" \
-  --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
+  -H 'Content-Type: application/json' \
+  --data '{"jsonrpc":"2.0","id":1,"method":"eth_chainId","params":[]}'
 ```
 
+```json
+{"jsonrpc":"2.0","id":1,"result":"0x77f"}
 ```
-This request returns the current network gas price.
-```
 
-### Supported RPC Methods
+Read methods such as `eth_blockNumber`, `eth_getBalance`, `eth_getCode` and `eth_getTransactionReceipt` inspect node state. `eth_call` simulates a call; it does not persist changes. `eth_sendRawTransaction` broadcasts a signed transaction and must not be treated as a read operation.
 
-Commonly used methods:
-
-* eth\_blockNumber
-* eth\_getBalance
-* eth\_getTransactionByHash
-* eth\_sendRawTransaction
-* eth\_call
-* eth\_getLogs
+The explorer REST API is a different interface at `https://turkscan.com/api/v2`. See [RPC Integration](../developers/rpc-integration.md).

@@ -1,8 +1,8 @@
 {
-  "markdown_files": 147,
-  "navigation_pages": 146,
-  "local_links": 665,
-  "json_examples": 93,
+  "markdown_files": 428,
+  "navigation_pages": 425,
+  "local_links": 2262,
+  "json_examples": 313,
   "openapi_paths": 114,
   "errors": [],
   "starting_commit": "5b803354f7422ff179d60b774a9d6dd6e753d3d5",
@@ -13,5 +13,11 @@
     ".gitbook/assets/a98d6142-1a0e-4a1b-a26d-fc31dcff1df7.png"
   ],
   "docs_docker_used": false,
-  "gitbook_management_verified": false
+  "publication_roots": {
+    "main": 269,
+    "api-reference": 120,
+    "help-center": 36
+  },
+  "main_publication_observed": true,
+  "separate_api_help_space_configuration_verified": false
 }
